@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.trending_product{
+    width: 90%;
+    height: 515px;
+    margin: 0 4%;
+}
+.trending_watch_heading h2 {
+    text-align: center;
+    word-spacing: 0.56rem;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-top: 2%;
+}
+
+.trending_product {
+    flex-direction: column;
+}
+
+.trending_product .trending_watch_image {
+    margin: 2% 2%;
+    flex-direction: row;
+    overflow-y: hidden;
+    padding: 1%;
+}
+.trending_product .trending_watch_image::-webkit-scrollbar{
+    display: none;
+}
+
+
+.trending_product .trending_watch_image .watch_img {
+    cursor: pointer;
+    padding: 0 1%;
+    transition: all 0.2s linear;
+}
+
+.trending_product .trending_watch_image .watch_img:hover {
+    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
+    padding: 1% 1%;
+    /* padding-bottom: 1%; */
+
+}
+
+.trending_product .trending_watch_image h5 {
+    padding: 2%;
+    font-size: 15px;
+}
+
+.trending_product .trending_watch_image  h6 span {
+    text-decoration: line-through;
+    color: grey;
+    font-weight: 900;
+    font-size: 13px;
+    padding: 2%;
+}
+
+.trending_product .trending_watch_image h6 {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+/* section digital add */
+
+.digital_adds{
+    width: 90%;
+    margin: 0 4%;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.digital_adds .top .content-left , .content-left2{
+    color: white;
+    text-align: center;
+    padding: 18% 5%;
+    font-size: 23px;
+    font-weight: bold;
+}
+.digital_adds .top .content-left a{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.digital_adds .top .content-img{
+    position: relative;
+    left: -50px;
+    top: 120px;
+    cursor: pointer;
+}
+
+.digital_adds .bottom .content-left2{
+    padding: 10% 5%;
+}
+.digital_adds .bottom .content-img2{
+    position: relative;
+    left: 40px;
+    bottom: 22px;
+    cursor: pointer;
+}
+
+/* section featured  */
+
+.featured_collections{
+    width: 90%;
+    height: 200px;
+    margin: 0 7%;
+    padding: 1%;
+    
+}
+.featured_collections .trending_watch_heading h2{
+    text-align: center;
+    padding: 2%;
+    line-height: 1.5;
+}
+.featured_collections .featured-img{
+    position: relative;
+    /* top: 1px; */
+    left: 10px;
+    
+}
+.featured_collections .featured-img h4{
+    text-align: center;
+    font-size: 30px;
+    color: goldenrod;
+    padding: 2%;
+   
+}
+.featured_collections .featured-img p{
+    color: white;
+    flex-wrap: wrap;
+    padding: 2%;
+    text-align: center;
+    /* text-align: justify; */
+  /* text-justify: inter-word; */
+   
+}
+.featured_collections .featured-img>*{
+    padding: 2%;
+}
+/* .featured_collections .featured-img .allnighters{
+    border: 5px solid yellow;
+}
+.featured_collections .featured-img .coke{
+    border: 5px solid yellow;
+}
+.featured_collections .featured-img .tees{
+    border: 5px solid yellow;
+} */
+
+.color{
+    width: 1500px;
+    height: 500px;
+    margin: 0 4%;
+    background-color: black;
+}
+
+/* footer starts here */
+
+/* section1 */
+.section1 {
+    background-color: rgb(248, 245, 245);
+}
+
+.section1-container {
+    padding-bottom: 60px;
+}
+
+.section1-heading {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.section1-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-detail {
+    background-color: black;
+    width: 350px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.location-detail ul {
+    margin: 0 10px;
+}
+
+.location-detail ul li {
+    list-style: none;
+}
+
+.location-detail ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.inputBtn {
+    width: 220px;
+    padding: 17px 20px;
+    border: none;
+    outline: none;
+}
+
+.searchBtn {
+    width: 130px;
+    padding: 15px 20px;
+}
+
+
+
+/* section-2 */
+.section2 {
+    background-color: rgb(41, 40, 40);
+}
+
+.section2-container {
+    display: flex;
+    justify-content: space-around;
+    color: honeydew;
+    margin: 0 150px;
+}
+
+.section2-innerdiv {
+    width: 280px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section2-heading {
+    line-height: 2;
+}
+
+.section2-innerdiv p {
+    line-height: 1.5;
+}
+
+
+
+
+
+/* section-3 */
+.section3-container {
+    margin: 40px 80px;
+    text-align: justify;
+}
+
+.section3-heading {
+    color: rgb(110, 110, 110);
+    margin: 10px 0;
+}
+
+.section3-para {
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+.section3-know-more-btn {
+    position: absolute;
+    left: 1350px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    color: grey;
+}
+
+.section3-lowerDiv {
+    margin-top: 50px;
+    display: none;
+}
+
+.active {
+    display: block;
+    height: auto;
+}
+
+
+
+/* section-4 */
+.section4 {
+    background-color: rgb(41, 40, 40);
+    color: honeydew;
+    padding: 40px 0;
+}
+
+.section4-upperDiv {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 120px;
+}
+
+.image {
+    width: 150px;
+    margin: 25px 10px 0 10px;
+}
+
+.section4-heading {
+    font-weight: bolder;
+}
+
+.section4-upperDiv ul li {
+    list-style: none;
+}
+
+.section4-upperDiv ul li a {
+    text-decoration: none;
+    color: honeydew;
+    line-height: 3;
+}
+
+.section4-upperDiv ul li a:hover {
+    color: rgb(175, 80, 45);
+}
+
+.inner-deatil {
+    line-height: 3;
+}
+
+.download-world-of-titan-app .flex1 {
+    display: flex;
+}
+
+.flex1-heading {
+    margin-right: 30px;
+}
+
+.icons i {
+    font-size: 20px;
+}
+
+.download-world-of-titan-app .flex1 li {
+    padding: 0 10px;
+}
+
+.click-here {
+    border-bottom: 1px solid honeydew;
+}
+
+.click-here:hover {
+    border-bottom: 1px solid rgb(145, 64, 34);
+}
+
+.whatsapp-icon {
+    font-size: 22px;
+}
+
+
+/* prodcut page */
+
+.product_section{
+    margin: 1% 3%;
+    border: 2px solid red;
+    height: fit-content;
+}
+.product_section .product-img{
+    margin: 1% 1%;
+}
+.product_section .product-detail{
+    margin: 5% 1%;
+}
+.product_section .product-detail .product_heading {
+    justify-content: space-around;
+    word-spacing: 0.56rem;
+}
+
+.product-detail  .offer{
+    text-decoration: line-through;
+    font-size: 27px;
+    color: gray;
+}
+.product-detail .tax{
+    color: grey;
+    font-size: 20px;
+}
+.rating i{
+    color: orangered;
+    cursor: pointer;
+}
+.product-detail   h6{
+    font-size: 33px;
+    padding-top: 12%;
+    padding-left: 5%;
+}
+.product-detail .discount{
+    color: red;
+}
+.product_section .product-detail .emi{
+    flex-direction: column;
+}
+.emi{
+    width: 50vw;
+    position: relative;
+    right: 20%;
+}
+.emi h6{
+    font-size: 12px;
+    word-spacing: 0.1rem;
+    margin-top: 400px;
+    background: rgb(207, 204, 204);
+    height:fit-content;
+    padding: 1%;
+   
+}
+.emi span a{
+    color: red;
+}
+.emi h4{
+    font-size: 15px;
+    margin-top: 100%;
+}
+.button{
+    margin-top: 110%;
+    margin-right: 200px;
+}
