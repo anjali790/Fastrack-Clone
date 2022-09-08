@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* section1 */
+.section1 {
+    background-color: rgb(248, 245, 245);
+}
+
+.section1-container {
+    padding-bottom: 60px;
+}
+
+.section1-heading {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.section1-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-detail {
+    background-color: black;
+    width: 350px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.location-detail ul {
+    margin: 0 10px;
+}
+
+.location-detail ul li {
+    list-style: none;
+}
+
+.location-detail ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.inputBtn {
+    width: 220px;
+    padding: 17px 20px;
+    border: none;
+    outline: none;
+}
+
+.searchBtn {
+    width: 130px;
+    padding: 15px 20px;
+}
+
+
+
+/* section-2 */
+.section2 {
+    background-color: rgb(41, 40, 40);
+}
+
+.section2-container {
+    display: flex;
+    justify-content: space-around;
+    color: honeydew;
+    margin: 0 150px;
+}
+
+.section2-innerdiv {
+    width: 280px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section2-heading {
+    line-height: 2;
+}
+
+.section2-innerdiv p {
+    line-height: 1.5;
+}
+
+
+
+
+
+/* section-3 */
+.section3-container {
+    margin: 40px 80px;
+    text-align: justify;
+}
+
+.section3-heading {
+    color: rgb(110, 110, 110);
+    margin: 10px 0;
+}
+
+.section3-para {
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+.section3-know-more-btn {
+    position: absolute;
+    left: 1350px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    color: grey;
+}
+
+.section3-lowerDiv {
+    margin-top: 50px;
+    display: none;
+}
+
+.active {
+    display: block;
+    height: auto;
+}
+
+
+
+/* section-4 */
+.section4 {
+    background-color: rgb(41, 40, 40);
+    color: honeydew;
+    padding: 40px 0;
+}
+
+.section4-upperDiv {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 120px;
+}
+
+.image {
+    width: 150px;
+    margin: 25px 10px 0 10px;
+}
+
+.section4-heading {
+    font-weight: bolder;
+}
+
+.section4-upperDiv ul li {
+    list-style: none;
+}
+
+.section4-upperDiv ul li a {
+    text-decoration: none;
+    color: honeydew;
+    line-height: 3;
+}
+
+.section4-upperDiv ul li a:hover {
+    color: rgb(175, 80, 45);
+}
+
+.inner-deatil {
+    line-height: 3;
+}
+
+.download-world-of-titan-app .flex1 {
+    display: flex;
+}
+
+.flex1-heading {
+    margin-right: 30px;
+}
+
+.icons i {
+    font-size: 20px;
+}
+
+.download-world-of-titan-app .flex1 li {
+    padding: 0 10px;
+}
+
+.click-here {
+    border-bottom: 1px solid honeydew;
+}
+
+.click-here:hover {
+    border-bottom: 1px solid rgb(145, 64, 34);
+}
+
+.whatsapp-icon {
+    font-size: 22px;
+}
