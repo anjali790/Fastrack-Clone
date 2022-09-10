@@ -6,8 +6,6 @@ const email = document.querySelector('.email');
 const password = document.querySelector('.password');
 
 
-
-
 btn.addEventListener("click", () => {
   let obj = {
     firstName : firstName.value,
@@ -38,7 +36,6 @@ btn.addEventListener("click", () => {
           localStorage.setItem('data',JSON.stringify(data));
         }
       }
-      
 });
 
 // localStorage.clear();
