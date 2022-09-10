@@ -121,9 +121,9 @@
 }
 .featured_collections .featured-img{
     position: relative;
-    /* top: 1px; */
+    top: 1px;
     left: 10px;
-    
+
 }
 .featured_collections .featured-img h4{
     text-align: center;
