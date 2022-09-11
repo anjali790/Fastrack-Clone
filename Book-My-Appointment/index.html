@@ -21,7 +21,7 @@
                     <h2>Video Call</h2>
                     <form class="form">
                         <input type="text" name="name" id="input" class="name" placeholder="Name*" required>
-                        <input type="text" name="phoneNumber" id="input" class="phoneNumber" placeholder="Phone Number*" required>
+                        <input type="text" name="phoneNumber" id="input" class="phoneNumber" placeholder="Phone Number*" minlength="10" maxlength="10" required>
                         <select name="state" class="state" required>
                             <option value="state *">State *</option>
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -62,24 +62,12 @@
                             <option value="West Bengal">West Bengal</option>
                         </select>
                         <div class="checkbox-sendNotification">
-                            <input type="checkbox" name="checkbox" class="checkbox">
+                            <input type="checkbox" name="checkbox" class="checkbox" required>
                             <span>Send notifications to my phone number</span>
                         </div>
                         <button class="submitBtn">SUBMIT</button>
                     </form>
                 </div>
-
-
-                <!-- <div class="visitStore">
-                    <div class="visitStore-leftDiv">
-                        <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/4ff00c78-303a-4efe-880e-20c92435ef9b/smartphone/MB-BA.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-4ff00c78-303a-4efe-880e-20c92435ef9b-smartphone-naU4zTh" alt="">
-                    </div>
-                    <div class="visitStore-rightDiv">
-
-                    </div>
-                </div>
-             -->
-            
             </div>
         </div>
 
@@ -91,10 +79,7 @@
             </P>
         </div>
     </div>
-
-
-
-
+    
     <script src="app.js"></script>
 </body>
 
