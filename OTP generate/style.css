@@ -8,6 +8,10 @@
     margin-bottom: 20px;
 }
 
+.verify-mobile-otp-heading{
+    margin: 0 10px;
+}
+
 .otp-container{
    text-align: center;
    width: 500px;
