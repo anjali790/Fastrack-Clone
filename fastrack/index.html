@@ -9,12 +9,95 @@
     <link rel="stylesheet" href="style.css">
     <title>Fastrack : watch Hub</title>
 </head>
+<style>
+    figure {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+button{
+    width: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+/* .btn{
+    display: flex;
+} */
+button i{
+    font-size: 33px;
+}
 
+figure::-webkit-scrollbar {
+    display: none;
+}
+</style>
 <body>
     <section class="trending_product flex">
+        <div class="trending_watch_heading">
+            <h2>TRENDING PRODUCTS</h2>
+        </div>
+        <div class="trending_watch_image flex">
+            <button class="prev btn"><i class="fa-solid fa-square-caret-left"></i></button>
+    <figure>
+            <div class="watch_img">
+                <a href="./product.html">
+                <img src="./img/watch1.webp" class="watch" alt="watch" style="width: 250px; height:250px;"></a>
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;  9995.00</span>   &#8377; 6995.00</h6>
+                
+            </div>
+            <div class="watch_img">
+                <a href="./product.html">
+                <img src="./img/watch2.webp" class="watch" alt="watch" style="width: 250px; height:250px;"></a>
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+            <div class="watch_img">
+                <a href="./product.html">
+                <img src="./img/watch3.webp" class="watch" alt="watch" style="width: 250px; height:250px;"></a>
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+            <div class="watch_img">
+                <img src="./img/watch1.webp" class="watch" alt="watch" style="width: 250px; height:250px;">
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+            <div class="watch_img">
+                <img src="./img/watch2.webp" class="watch" alt="watch" style="width: 250px; height:250px;">
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+            <div class="watch_img">
+                <img src="./img/watch3.webp" class="watch" alt="watch" style="width: 250px; height:250px;">
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377; 9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+            <div class="watch_img">
+                <img src="./img/watch1.webp" class="watch" alt="watch" style="width: 250px; height:250px;">
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+            <div class="watch_img">
+                <img src="./img/watch2.webp" class="watch" alt="watch" style="width: 250px; height:250px;">
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+            <div class="watch_img">
+                <img src="./img/watch3.webp" class="watch" alt="watch" style="width: 250px; height:250px;" >
+                <h5>REFLEX PLAY PLUS SMART ...</h5>
+                <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
+            </div>
+        </figure>
+        <button class="next btn"><i class="fa-solid fa-square-caret-right"></i></button>
+    </div>
+    </section>
+
+    <!-- <section class="trending_product flex"> -->
         <!-- <div class="L-btn"><i class="fa-regular fa-circle-arrow-left"></i></div> -->
       
-        <div class="trending_watch_heading">
+        <!-- <div class="trending_watch_heading">
            <h2>TRENDING PRODUCTS</h2>
         </div>
         <div class="trending_watch_image flex">
@@ -67,10 +150,10 @@
                 <h5>REFLEX PLAY PLUS SMART ...</h5>
                 <h6> <span>&#8377;   9995.00</span>   &#8377; 6995.00</h6>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="R-btn"><i class="fa-regular fa-circle-arrow-right"></i></div> -->
-    </section>
-    <section class="digital_adds ">
+    <!-- </section> -->
+    <!-- <section class="digital_adds ">
         <div class="top flex">
             <div class="content-left">
                 GET YOURSELF A WATCH THAT REFLECTS YOUR STYLE! INTRODUCING FASTRACK REFLEX VOX! NOW AVAILABLE
@@ -91,8 +174,8 @@
                 <a href="#">Know more</a>
             </div>
         </div>
-    </section>
-    <section class="trending_product flex">
+    </section> -->
+    <!-- <section class="trending_product flex">
         <div class="trending_watch_heading">
             <h2>TOP SELLERS</h2>
         </div>
@@ -166,12 +249,30 @@
                 <p>Level up your game and throw  it back  to the daysof  <br> 2D gaming  with this sick collection.</p>
             </div>
         </div>
-    </section>
-    <section class="color"></section>
+    </section> -->
+    <!-- <section class="color"></section> -->
 
     <!-- foot starts here -->
 
-    
+    <script>
+
+const figure = document.querySelectorAll("figure");
+const nxtBtn = document.querySelectorAll(".next");
+const preBtn = document.querySelectorAll(".prev");
+
+figure.forEach((item,i) => {
+  let a = item.getBoundingClientRect();
+  let b = a.width;
+
+  nxtBtn[i].addEventListener("click", () => {
+    item.scrollLeft += b;
+  })
+
+  preBtn[i].addEventListener("click", () => {
+    item.scrollLeft -= b;
+  })
+})
+    </script>
     <script src="./img/app.js"></script>
 </body>
 
