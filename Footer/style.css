@@ -199,3 +199,61 @@
 .whatsapp-icon {
     font-size: 22px;
 }
+
+
+
+
+/* section5  */
+/* .section5{
+   display: none;
+} */
+
+.upperDiv-para{
+    margin-top: 30px;
+    margin-left: 150px;
+    color: gray;
+    font: 18px;
+}
+
+.section5-lowerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section5-heading{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.section5-para{
+    margin-bottom: 30px;
+    width: 650px;
+    text-align: center;
+}
+
+.section5-form label{
+    color: grey;
+    font-weight: bold;
+}
+
+.email-input, .order-number-input{
+    width: 400px;
+    height: 50px;
+    margin-top: 5px;
+    border: none;
+    font-size: 20px;
+    padding: 0 5px;
+    margin-bottom: 30px;
+    background-color: rgb(241, 235, 235);
+}
+
+.track-oredr-btn{
+    width: 410px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
