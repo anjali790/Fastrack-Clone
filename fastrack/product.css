@@ -1,0 +1,175 @@
+.flex{
+    display: flex;
+}
+section{
+    border: 2px solid red;
+    height: fit-content;
+    display: flex;
+    padding: 2%;
+}
+.product_img{
+    border: 2px solid magenta;
+    padding: 5%;
+    margin: 2%;
+}
+.product_details{
+    width: 200vw;
+    height: fit-content;
+    margin-top: 2%;
+    border: 2px solid yellow;
+}
+.product_name{
+    padding: 4%;
+    justify-content: space-around;
+}
+.product_name .rating p{
+    color: orangered;
+    font-size: 23px;
+}
+.product_details h6{
+    font-size: 23px;
+    padding: 2% 6%;
+}
+.product_details  .offer{
+    text-decoration: line-through;
+    font-size: 27px;
+    color: gray;
+}
+.product_details .tax{
+    color: grey;
+    font-size: 20px;
+}
+.product_details .discount{
+    color: red;
+} 
+.product_details .emi h6{
+font-size: 15px;
+margin: 1% 8%;
+margin-bottom: 4%;
+background: gray;
+width: fit-content;
+}
+.product_details .desc p{
+    font-size: 22px;
+    margin-left: 12%;
+}
+.product_details .qty{
+    margin-left: 12%;
+    /* padding: 1%; */
+}
+.product_details button{
+    margin: 1%;
+}
+.product_details .cart{
+    margin: 2% 8%;
+}
+.product_details .cart button{
+    font-size: 20px;
+    width: 20vw;
+    height: 5vh;
+    background:orangered;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* prodcut page
+/* 
+.product_section{
+    margin: 1% 3%;
+    border: 2px solid red;
+    height: fit-content;
+}
+.product_section .product-img{
+    margin: 1% 1%;
+}
+.product_section .product-detail{
+    margin: 5% 1%;
+}
+.product_section .product-detail .product_heading {
+    justify-content: space-around;
+    word-spacing: 0.56rem;
+}
+
+.product-detail  .offer{
+    text-decoration: line-through;
+    font-size: 27px;
+    color: gray;
+}
+.product-detail .tax{
+    color: grey;
+    font-size: 20px;
+}
+.rating i{
+    color: orangered;
+    cursor: pointer;
+}
+.product-detail   h6{
+    font-size: 33px;
+    padding-top: 12%;
+    padding-left: 5%;
+}
+.product-detail .discount{
+    color: red;
+} */ 
+/* .product_section .product-detail .emi{
+    flex-direction: column;
+}
+.emi{
+    width: 50vw;
+    position: relative;
+    right: 20%;
+}
+.emi h6{
+    font-size: 12px;
+    word-spacing: 0.1rem;
+    margin-top: 400px;
+    background: rgb(207, 204, 204);
+    height:fit-content;
+    padding: 1%;
+   
+}
+.emi span a{
+    color: red;
+}
+.emi h4{
+    font-size: 15px;
+    margin-top: 100%;
+} */

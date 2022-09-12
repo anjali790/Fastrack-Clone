@@ -5,11 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f0511d0431.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
     <title>REFLEX PLAY PLUS SMART WATCH WITH PINK STRAP AND BLUETOOTH CALLING</title>
 </head>
 <body>
-    <section class="product_section flex">
+
+    <section class="product_detail">
+        <div class="product_img">
+            <img src="./img/watch1.webp" alt="">
+        </div>
+        <div class="product_details">
+            <div class="product_name flex">
+                <div>
+                    <h1>REFLEX PLAY SMART WATCH</h1>
+                </div>
+                <div class="rating flex">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p class="p"> 6 review</p>
+                </div>
+            </div>
+            <div>
+                <h6> <span class="offer">MRP  &#8377; 7995.00</span>  OFFER PRICE &#8377; 5995.00 <span class="discount">(25% Off)</span> <span class="tax">(Inclusive all taxes)</span> </h6> 
+            </div>
+            <div class="emi">
+                <h6>EMI STARTS AT ₹ 288. NO COST EMI AVAILABLE <span>
+                    <a href="#"> CLICK HERE TO VIEW PLANS </a></span>
+                </h6>  
+            </div>
+            <div class="desc">
+                <p>Fastrack Smart Unisex Watch with Blue Strap</p>
+            </div>
+            <div class="qty flex">
+                <button class="add"><i class="fa-solid fa-minus"></i></button>
+                <p>1 UNIT</p>
+                <button class="minus"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="cart">
+                <button>ADD CART</button>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="product_section flex">
         <div class="product-img">
             <img src="./img/watch1.webp" alt="watch">
         </div>
@@ -43,35 +82,13 @@
             </button>
         </div>
         </div>
-        <button class="cart" onclick="addtocart()">Add to cart</button>
-    </section>
-    <section>
+        <button class="cart">Add to cart</button>
         <div class="cart" id="cart">
             <div class="title">Cart</div> <hr>
             <div id="title"></div>
         </div>
-    </section>
-    <script>
-        var addItmed = 0;
-        function addtocart(item){
-            addItmed += 1
-            var selectedItem = document.createElement("div");
-            selectedItem.classList.add("cartImg");
-            selectedItem.setAttribute("id" ,  addItmed);
-            var img = document.createElement("img");
-            img.setAttribute("src" . item.children[0].currentSrc)
-            var cartItem = document.getElementById("title");
-            selectedItem.append(img)
-            cartItem.append(selectedItem);
-            console.log(addItmed)
-            
-
-        }
-    </script>
+    </section> -->
 </body>
 </html>
-
-
-<!-- how to make crousel -->
 
 
