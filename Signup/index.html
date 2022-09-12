@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="signup_click">
+        <figure>
+            <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/f391e0c4-c55a-4ceb-b12b-e1edb7c19432/fastrack.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-f391e0c4-c55a-4ceb-b12b-e1edb7c19432-nv8vKiF"
+                alt="logo" />
+        </figure>
+        <fieldset class="signup_box">
+            <legend>SIGNUP</legend>
+            <select id="title" aria-placeholder="TITLE *">
+                <option></option>
+                <option>Mr.</option>
+                <option>Ms.</option>
+            </select>
+            <input id="first_name" type="text" placeholder="FIRST NAME *" required />
+            <input id="last_name" type="text" placeholder="LAST NAME*" required />
+            <select id="country" required>
+                <option>91</option>
+                <option>61</option>
+                <option>1</option>
+                <option>1</option>
+                <option>65</option>
+                <option>44</option>
+                <option>971</option>
+                <option>64</option>
+                <option>60</option>
+                <option>49</option>
+                <option>40</option>
+                <option>254</option>
+                <option>31</option>
+            </select>
+            <input id="mobile_no" type="tel" placeholder="MOBILE NUMBER *" required />
+            <input id="email" type="email" placeholder="EMAIL ID *" />
+            <div id="password">
+                <input class="password" type="password" placeholder="PASSWORD *" required />
+                <a><i class="fa-sharp fa-solid fa-eye-slash"></i></a>
+            </div>
+            <div id="receive">
+                <input type="checkbox" name="" id="checkbox" required />
+                <h2>Receive our newsletters and special offers.</h2>
+            </div>
+            <div id="t_c">
+                <input type="checkbox" name="" id="checkbox" required />
+                <h2>
+                    I agree to the <a>Terms & Conditions*</a> and <a>Privacy Policy</a>
+                </h2>
+            </div>
+            <button id="register">REGISTER</button>
+        </fieldset>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

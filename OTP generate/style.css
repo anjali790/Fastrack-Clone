@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.verify-mobile-otp-heading{
+    margin: 0 10px;
+}
+
+.otp-container{
+   text-align: center;
+   width: 400px;
+   margin: 0 auto;
+   margin-top: 40px;
+}
+
+.otp-para{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.otp-input{
+    width: 350px;
+    padding: 15px 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.verify-OTP-Btn{
+    width: 400px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding:  15px 0;
+    cursor: pointer;
+}
+
+.otp-resend{
+    margin-top: 30px;
+}
