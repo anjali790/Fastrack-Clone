@@ -1,4 +1,4 @@
-//otp-generate//
+//otp-generate
 const otpVerifyBtn = document.querySelector(".verify-OTP-Btn");
 const otpInput = document.querySelector(".otp-input");
 
@@ -21,7 +21,7 @@ otpVerifyBtn.addEventListener("click", () => {
 
 
 
-//sign-in//
+//sign-in
 const registerBtn = document.querySelector('#register');
 const firstName = document.querySelector('#first_name');
 const lastName = document.querySelector('#last_name');
@@ -68,7 +68,7 @@ registerBtn.addEventListener("click", () => {
 
 
 
-//Book appointment//
+//Book appointment
 const submitBtn = document.querySelector('.submitBtn');
 const personName = document.querySelector('.name');
 const phoneNumber = document.querySelector('.phoneNumber');
@@ -98,3 +98,12 @@ submitBtn.addEventListener('click', () => {
     }
 
 });
+
+
+// footer
+const btn = document.querySelector('.section3-know-more-btn');
+const lowerDiv = document.querySelector('.section3-lowerDiv');
+
+btn.addEventListener('click', function(){
+    lowerDiv.classList.toggle("active");
+}); 
