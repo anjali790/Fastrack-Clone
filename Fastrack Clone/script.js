@@ -196,3 +196,15 @@ signup_btn.addEventListener("click",function () {
 })
 
 // ---------------------------- Section on click "LOGIN" ends here ---------------------------- //
+
+// ---------------------------- Section on click "REGISTER" starts here ----------------------- //
+
+const registerClick = document.getElementById("register_click");
+const otpBtn = document.getElementById("otp_btn");
+
+otpBtn.addEventListener("click", function () {
+  registerClick.style.display = "block";
+  login_click.style.display = "none";
+})
+
+// ---------------------------- Section on click "REGISTER" ends here ----------------------- //
