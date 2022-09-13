@@ -117,6 +117,9 @@ currency.addEventListener("click", function () {
 
 // ---------------------- Section on click "CURRENCY SELECTOR" ends here ------------------- /
 
+
+// --------------slider coder here--------------------------
+
 let slides = document.getElementsByClassName("slide");
 let navlinks = document.getElementsByClassName("dot");
 let currentSlide = 0;
@@ -155,19 +158,5 @@ document.querySelectorAll(".dot").forEach((bullet, bulletIndex) => {
 
 // ------fastrack essential product start-----
 
-const productContainers = [...document.querySelectorAll('.product-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
 
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
 
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
