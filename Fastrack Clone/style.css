@@ -838,6 +838,59 @@ input::-webkit-inner-spin-button {
   border: 1px solid black;
   font-weight: 700;
   margin-top: 25px;
+  background-color: white;
+}
+
+#signup_click .signup_box #register:hover {
+  color: white;
+  background-color: black;
 }
 
 /* ---------------------------- Section on click "SIGN UP NOW" ends here --------------------------- */
+
+/* ------------------------------- Section on click "REGISTER" starts here ------------------------- */
+
+
+#register_click {
+  display: none;
+}
+
+#register_click figure img {
+  height: 20%;
+  width: 20%;
+  display: flex;
+  margin: 20px auto;
+}
+
+#register_click .register_box {
+  width: 30%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#register_click .register_box h2 {
+  margin: 20px;
+}
+
+#register_click .register_box #register_input {
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 20px 40px 20px;
+}
+
+#register_click .register_box .verify_btn {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#register_click .register_box .verify_btn:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ------------------------------- Section on click "REGISTER" ENDs here ------------------------- */
