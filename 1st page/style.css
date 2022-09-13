@@ -1,0 +1,935 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.trending_product{
+  width: 90%;
+  height: 515px;
+  margin: 0 4%;
+}
+.trending_watch_heading h2 {
+  text-align: center;
+  word-spacing: 0.56rem;
+  font-size: 30px;
+  line-height: 1.5;
+  padding-top: 2%;
+}
+
+.trending_product {
+  flex-direction: column;
+}
+
+.trending_product .trending_watch_image {
+  margin: 2% 2%;
+  flex-direction: row;
+  overflow-y: hidden;
+  padding: 1%;
+}
+
+
+
+.trending_product .trending_watch_image .watch_img {
+  cursor: pointer;
+  padding: 0 1%;
+  transition: all 0.2s linear;
+}
+
+.trending_product .trending_watch_image .watch_img:hover {
+  padding: 1% 1%;
+
+}
+
+.trending_product .trending_watch_image h5 {
+  padding: 2%;
+  font-size: 15px;
+}
+
+.trending_product .trending_watch_image  h6 span {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 900;
+  font-size: 13px;
+  padding: 2%;
+}
+
+.trending_product .trending_watch_image h6 {
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+}
+
+/* section digital add */
+
+.digital_adds{
+  width: 90%;
+  margin: 0 4%;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.digital_adds .top .content-left , .content-left2{
+  color: white;
+  text-align: center;
+  padding: 18% 5%;
+  font-size: 23px;
+  font-weight: bold;
+}
+.digital_adds .top .content-left a{
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.digital_adds .top .content-img{
+  position: relative;
+  left: -50px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.digital_adds .bottom .content-left2{
+  padding: 10% 5%;
+}
+.digital_adds .bottom .content-img2{
+  position: relative;
+  left: 40px;
+  bottom: 22px;
+  cursor: pointer;
+}
+
+/* section featured  */
+
+.featured_collections{
+  width: 90%;
+  height: 200px;
+  margin: 0 7%;
+  padding: 1%;
+  
+}
+.featured_collections .trending_watch_heading h2{
+  text-align: center;
+  padding: 2%;
+  line-height: 1.5;
+}
+.featured_collections .featured-img{
+  position: relative;
+  /* top: 1px; */
+  left: 10px;
+  
+}
+.featured_collections .featured-img h4{
+  text-align: center;
+  font-size: 30px;
+  color: goldenrod;
+  padding: 2%;
+ 
+}
+.featured_collections .featured-img p{
+  color: white;
+  flex-wrap: wrap;
+  padding: 2%;
+  text-align: center;
+  /* text-align: justify; */
+/* text-justify: inter-word; */
+ 
+}
+.featured_collections .featured-img>*{
+  padding: 2%;
+}
+/* .featured_collections .featured-img .allnighters{
+  border: 5px solid yellow;
+}
+.featured_collections .featured-img .coke{
+  border: 5px solid yellow;
+}
+.featured_collections .featured-img .tees{
+  border: 5px solid yellow;
+} */
+
+.color{
+  width: 1500px;
+  height: 500px;
+  margin: 0 4%;
+  background-color: black;
+}
+
+/* section1 */
+.section1 {
+    background-color: rgb(248, 245, 245);
+}
+
+.section1-container {
+    padding-bottom: 60px;
+}
+
+.section1-heading {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.section1-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-detail {
+    background-color: black;
+    width: 350px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.location-detail ul {
+    margin: 0 10px;
+}
+
+.location-detail ul li {
+    list-style: none;
+}
+
+.location-detail ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.inputBtn {
+    width: 220px;
+    padding: 17px 20px;
+    border: none;
+    outline: none;
+}
+
+.searchBtn {
+    width: 130px;
+    padding: 15px 20px;
+}
+
+
+
+/* section-2 */
+.section2 {
+    background-color: rgb(41, 40, 40);
+}
+
+.section2-container {
+    display: flex;
+    justify-content: space-around;
+    color: honeydew;
+    margin: 0 150px;
+}
+
+.section2-innerdiv {
+    width: 280px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section2-heading {
+    line-height: 2;
+}
+
+.section2-innerdiv p {
+    line-height: 1.5;
+}
+
+
+
+
+
+/* section-3 */
+.section3-container {
+    margin: 40px 80px;
+    text-align: justify;
+}
+
+.section3-heading {
+    color: rgb(110, 110, 110);
+    margin: 10px 0;
+}
+
+.section3-para {
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+.section3-know-more-btn {
+    position: absolute;
+    left: 1350px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    color: grey;
+}
+
+.section3-lowerDiv {
+    margin-top: 50px;
+    display: none;
+}
+
+.active {
+    display: block;
+    height: auto;
+}
+
+
+
+/* section-4 */
+.section4 {
+    background-color: rgb(41, 40, 40);
+    color: honeydew;
+    padding: 40px 0;
+}
+
+.section4-upperDiv {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 120px;
+}
+
+.image {
+    width: 150px;
+    margin: 25px 10px 0 10px;
+}
+
+.section4-heading {
+    font-weight: bolder;
+}
+
+.section4-upperDiv ul li {
+    list-style: none;
+}
+
+.section4-upperDiv ul li a {
+    text-decoration: none;
+    color: honeydew;
+    line-height: 3;
+}
+
+.section4-upperDiv ul li a:hover {
+    color: rgb(175, 80, 45);
+}
+
+.inner-deatil {
+    line-height: 3;
+}
+
+.download-world-of-titan-app .flex1 {
+    display: flex;
+}
+
+.flex1-heading {
+    margin-right: 30px;
+}
+
+.icons i {
+    font-size: 20px;
+}
+
+.download-world-of-titan-app .flex1 li {
+    padding: 0 10px;
+}
+
+.click-here {
+    border-bottom: 1px solid honeydew;
+}
+
+.click-here:hover {
+    border-bottom: 1px solid rgb(145, 64, 34);
+}
+
+.whatsapp-icon {
+    font-size: 22px;
+}
+
+
+/* prodcut page */
+
+.product_section{
+    margin: 1% 3%;
+    border: 2px solid red;
+}
+.product_section .product-img{
+    margin: 1% 1%;
+}
+.product_section .product-detail{
+    margin: 5% 1%;
+}
+.product_section .product-detail .product_heading {
+    justify-content: space-around;
+    word-spacing: 0.56rem;
+}
+
+.product-detail  .offer{
+    text-decoration: line-through;
+    font-size: 27px;
+    color: gray;
+}
+.product-detail .tax{
+    color: grey;
+    font-size: 20px;
+}
+.rating i{
+    color: orangered;
+    cursor: pointer;
+}
+.product-detail   h6{
+    font-size: 33px;
+    padding-top: 12%;
+    padding-left: 5%;
+}
+.product-detail .discount{
+    color: red;
+}
+.product-detail .emi{
+    flex-direction: column;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  /* -------------------------------- Header Starts Here -------------------------------- */
+  
+  /* ------------------------------ Top Header Starts Here ---------------------------------*/
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    padding: 15px;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    /* position: relative; */
+    /* top: 197px; */
+  }
+  
+  .top .left:first-child {
+    margin-left: 60px;
+  }
+  
+  .top a {
+    color: rgb(175, 173, 173);
+    margin-right: 50px;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  
+  .top #currency {
+    margin-right: 2px;
+  }
+  
+  /* ----------------------------------- Top Header Ends Here ----------------------------------- */
+  
+  /* ----------------------------------Bottom Header Starts Here ---------------------------------*/
+  
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    padding: 25px;
+    /* position: relative; */
+    /* top: 197px; */
+  }
+  
+  .bottom .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottom a {
+    color: white;
+    margin-right: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .bottom .left:first-child i {
+    font-size: 2rem;
+    margin-left: 50px;
+  }
+  
+  .bottom .right:last-child i {
+    font-size: 1.5rem;
+  }
+  
+  #logo {
+    height: 40px;
+    width: 150px;
+    margin-right: 50px;
+  }
+  
+  #watch:hover,
+  #audio:hover,
+  #eyewear:hover,
+  #bags:hover,
+  #perfumes:hover,
+  #offers:hover {
+    color: orangered;
+  }
+  
+  /* ----------------------------------Bottom Header Ends Here ---------------------------------*/
+  
+  /* ----------------------- Section on hovering "Watches Starts Here" ----------------------------- */
+  
+  #watch_hover {
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 20px 50px 20px 60px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px); */
+  }
+  
+  .watch_style {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .watch_style h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .watch_style img {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  #watch_hover a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  
+  .watch_images {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .watch_shopCollectibles {
+    margin-right: 60px;
+  }
+  
+  #fig_caption {
+    display: flex;
+    align-items: center;
+  }
+  
+  #watch_img {
+    height: 420px;
+  }
+  
+  .watch_buy {
+    width: 75%;
+  }
+  
+  #watch_btn {
+    width: 90%;
+    padding: 10px;
+    color: white;
+    background-color: rgb(75, 73, 73);
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* ----------------------- Section on hovering "Watches" Ends Here ----------------------------- */
+  
+  /* ------------------- Section on hovering "Smart and Audio" Starts Here ------------------------- */
+  
+  #audio_hover {
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    padding: 20px 50px 20px 60px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    /* -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px); */
+  }
+  
+  .watch_neckbands {
+    display: flex;
+    width: 50%;
+  }
+  
+  .watches_bands,
+  .watches_wireless {
+    margin-right: 20px;
+    width: 50%;
+  }
+  
+  .watches_bands button,
+  .watches_wireless button {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(75, 73, 73);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .watch_neckbands a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+  
+  .watch_neckbands a h2 {
+    font-size: 15px;
+  }
+  
+  #audio_hover figure {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #audio_hover figure a {
+    margin-right: 20px;
+  }
+  
+  #audio_hover figure a img {
+    width: 98%;
+  }
+  
+  /* ------------------- Section on hovering "Smart and Audio" Ends Here ------------------------- */
+  
+  /* ---------------------- Section on hovering "Bags & MORE" Starts Here ---------------------------- */
+  
+  #bags_hover {
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    display: none;
+    padding: 20px 50px 20px 60px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .bags_content {
+    display: flex;
+  }
+  
+  .bags_style {
+    display: flex;
+    width: 50%;
+    color: white;
+  }
+  
+  #bags_hover a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  
+  #bag_heading {
+    font-size: 15px;
+  }
+  
+  .bags_guys h2,
+  .bags_guys a,
+  .bags_girls h2,
+  .bags_girls a,
+  .bags_category h2,
+  .bags_category a {
+    margin: 0 45px 20px 0;
+  }
+  
+  #bags_img {
+    width: 50%;
+  }
+  
+  #bags_img img {
+    height: 300px;
+  }
+  
+  /* ---------------------- Section on hovering "Bags & MORE" Ends Here ---------------------------- */
+  
+  /* ----------------------- Section on hovering "Perfumes" Starts Here -------------------------- */
+  
+  #perfumes_hover {
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    padding: 20px 50px 20px 60px;
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #perfumes_hover .perfumes_view {
+    width: 30%;
+  }
+  
+  .perfumes_both {
+    display: flex;
+  }
+  
+  .perfumes_both a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+  
+  .perfumes_both a h2 {
+    font-size: 15px;
+  }
+  
+  .perfumes_guys,
+  .perfumes_girls {
+    /* margin-right: 20px; */
+    width: 50%;
+  }
+  
+  .perfumes_view {
+    margin-right: 20px;
+  }
+  
+  .perfumes_view button {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(75, 73, 73);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #perfumes_hover figure {
+    width: 70%;
+  }
+  
+  #perfumes_img img {
+    height: 225px;
+    width: 100%;
+  }
+  
+  #perfumes_hover figure figcaption {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  #perfumes_hover figure a {
+    text-decoration: none;
+  }
+  
+  /* ----------------------- Section on hovering "Perfumes" Ends Here -------------------------- */
+  
+  /* ------------------- Section on hovering "Offers And More" Starts Here --------------------- */
+  
+  #offers_hover {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(41, 41, 41);
+    padding: 20px 50px 20px 60px;
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #offers_hover a img {
+    height: 200px;
+  }
+  
+  /* -------------------- Section on hovering "Offers And More" Ends Here ---------------------- */
+  
+  /* ---------------------------------------- Header Ends Here --------------------------------- */
+  
+  /* -------------------------------- Section on click "BRANDS" starts here -------------------- */
+  
+  #brands_click {
+    padding: 50px 80px;
+    text-align: center;
+    display: none;
+  }
+  
+  #brands_click h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: rgb(41, 41, 41);
+  }
+  
+  #brands_click figure {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  #brands_click figure a .bigger_img {
+    height: 400px;
+    width: 350px;
+  }
+  
+  #brands_click figure a .mid_img {
+    margin: 0 20px;
+  }
+  
+  #brands_click figure a .smaller_img {
+    height: 20%;
+    width: 40%;
+  }
+  
+  /* -------------------------------- Section on click "BRANDS" ends here -------------------- */
+  
+  /* ----------------------- Section on click "CURRENCY SELECTOR" starts here ---------------- */
+  
+  #currency_click {
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 50px;
+    display: none;
+  }
+  
+  #currency_click h3 {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: lighter;
+  }
+  
+  #currency_click button {
+    padding: 15px 80px;
+    /* outline: white; */
+    border: 1px solid rgb(148, 146, 146);
+    background-color: rgb(26, 25, 25);
+    color: rgb(110, 110, 110);
+    font-weight: 800;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+  
+  /* -------------------------- Section on click "CURRENCY SELECTOR" ends here --------------- */
+
+
+  /* Book my appoint css start here */
+ .container , .container2{
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5%;
+ } 
+
+.upperDiv{
+  display: flex;
+}
+
+.container  image{
+  width: 600px;
+  margin: 30px 25px;
+}
+
+.right-box{
+  margin: 30px 20px;
+  width: 750px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+#input{
+  width: 100%;
+  height: 35px;
+  margin: 20px 0;
+  padding: 0px 10px;
+  outline: none;
+}
+
+.state{
+  width: 774px;
+  height: 35px;
+  margin: 20px 0;
+  padding: 0px 10px;
+  outline: none;
+}
+
+.container .form .submitBtn{
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  height: 45px;
+  width: 774px;
+  margin: 20px 0;
+}
+
+.container .lowerDiv{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ .container .lowerDiv h2{
+  font-size: 33px;
+  margin-bottom: 10px;
+} 
+.container .lowerDiv p{
+  font-size: 18px;
+}
+.container-select{
+  display: flex;
+  margin: 2% 1%;
+}
+.container2 #input{
+  width: 100%;
+  height: 35px;
+  margin: 20px 0;
+  padding: 0px 10px;
+  outline: none;
+}
+.container2 .city , .store{
+    width: 374px;
+    height: 40px;
+    margin: 20px 30px;
+    padding: 0px 10px;
+    outline: none;
+ 
+}
+.container-date input{
+  width: 250px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+/* book my appoint css end here */
