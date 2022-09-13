@@ -1,412 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .flex {
   display: flex;
 }
-
-.trending_product{
-  width: 90%;
-  height: 515px;
-  margin: 0 4%;
-}
-.trending_watch_heading h2 {
-  text-align: center;
-  word-spacing: 0.56rem;
-  font-size: 30px;
-  line-height: 1.5;
-  padding-top: 2%;
-}
-
-.trending_product {
-  flex-direction: column;
-}
-
-.trending_product .trending_watch_image {
-  margin: 2% 2%;
-  flex-direction: row;
-  overflow-y: hidden;
-  padding: 1%;
-}
-
-
-
-.trending_product .trending_watch_image .watch_img {
-  cursor: pointer;
-  padding: 0 1%;
-  transition: all 0.2s linear;
-}
-
-.trending_product .trending_watch_image .watch_img:hover {
-  padding: 1% 1%;
-
-}
-
-.trending_product .trending_watch_image h5 {
-  padding: 2%;
-  font-size: 15px;
-}
-
-.trending_product .trending_watch_image  h6 span {
-  text-decoration: line-through;
-  color: grey;
-  font-weight: 900;
-  font-size: 13px;
-  padding: 2%;
-}
-
-.trending_product .trending_watch_image h6 {
-  font-size: 20px;
-  color: black;
-  font-weight: 900;
-}
-
-/* section digital add */
-
-.digital_adds{
-  width: 90%;
-  margin: 0 4%;
-  background-color: black;
-  box-sizing: border-box;
-}
-
-.digital_adds .top .content-left , .content-left2{
-  color: white;
-  text-align: center;
-  padding: 18% 5%;
-  font-size: 23px;
-  font-weight: bold;
-}
-.digital_adds .top .content-left a{
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-}
-.digital_adds .top .content-img{
-  position: relative;
-  left: -50px;
-  top: 60px;
-  cursor: pointer;
-}
-
-.digital_adds .bottom .content-left2{
-  padding: 10% 5%;
-}
-.digital_adds .bottom .content-img2{
-  position: relative;
-  left: 40px;
-  bottom: 22px;
-  cursor: pointer;
-}
-
-/* section featured  */
-
-.featured_collections{
-  width: 90%;
-  height: 200px;
-  margin: 0 7%;
-  padding: 1%;
-  
-}
-.featured_collections .trending_watch_heading h2{
-  text-align: center;
-  padding: 2%;
-  line-height: 1.5;
-}
-.featured_collections .featured-img{
-  position: relative;
-  /* top: 1px; */
-  left: 10px;
-  
-}
-.featured_collections .featured-img h4{
-  text-align: center;
-  font-size: 30px;
-  color: goldenrod;
-  padding: 2%;
- 
-}
-.featured_collections .featured-img p{
-  color: white;
-  flex-wrap: wrap;
-  padding: 2%;
-  text-align: center;
-  /* text-align: justify; */
-/* text-justify: inter-word; */
- 
-}
-.featured_collections .featured-img>*{
-  padding: 2%;
-}
-/* .featured_collections .featured-img .allnighters{
-  border: 5px solid yellow;
-}
-.featured_collections .featured-img .coke{
-  border: 5px solid yellow;
-}
-.featured_collections .featured-img .tees{
-  border: 5px solid yellow;
-} */
-
-.color{
-  width: 1500px;
-  height: 500px;
-  margin: 0 4%;
-  background-color: black;
-}
-
-/* section1 */
-.section1 {
-    background-color: rgb(248, 245, 245);
-}
-
-.section1-container {
-    padding-bottom: 60px;
-}
-
-.section1-heading {
-    text-align: center;
-    padding: 30px 0;
-    font-size: 30px;
-    letter-spacing: 1px;
-}
-
-.section1-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.location-detail {
-    background-color: black;
-    width: 350px;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 25px;
-}
-
-.location-detail ul {
-    margin: 0 10px;
-}
-
-.location-detail ul li {
-    list-style: none;
-}
-
-.location-detail ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.inputBtn {
-    width: 220px;
-    padding: 17px 20px;
-    border: none;
-    outline: none;
-}
-
-.searchBtn {
-    width: 130px;
-    padding: 15px 20px;
-}
-
-
-
-/* section-2 */
-.section2 {
-    background-color: rgb(41, 40, 40);
-}
-
-.section2-container {
-    display: flex;
-    justify-content: space-around;
-    color: honeydew;
-    margin: 0 150px;
-}
-
-.section2-innerdiv {
-    width: 280px;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.section2-heading {
-    line-height: 2;
-}
-
-.section2-innerdiv p {
-    line-height: 1.5;
-}
-
-
-
-
-
-/* section-3 */
-.section3-container {
-    margin: 40px 80px;
-    text-align: justify;
-}
-
-.section3-heading {
-    color: rgb(110, 110, 110);
-    margin: 10px 0;
-}
-
-.section3-para {
-    margin-bottom: 20px;
-    color: gray;
-    font-size: 14px;
-}
-
-.section3-know-more-btn {
-    position: absolute;
-    left: 1350px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    border-bottom: 1px solid gray;
-    color: grey;
-}
-
-.section3-lowerDiv {
-    margin-top: 50px;
-    display: none;
-}
-
-.active {
-    display: block;
-    height: auto;
-}
-
-
-
-/* section-4 */
-.section4 {
-    background-color: rgb(41, 40, 40);
-    color: honeydew;
-    padding: 40px 0;
-}
-
-.section4-upperDiv {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 120px;
-}
-
-.image {
-    width: 150px;
-    margin: 25px 10px 0 10px;
-}
-
-.section4-heading {
-    font-weight: bolder;
-}
-
-.section4-upperDiv ul li {
-    list-style: none;
-}
-
-.section4-upperDiv ul li a {
-    text-decoration: none;
-    color: honeydew;
-    line-height: 3;
-}
-
-.section4-upperDiv ul li a:hover {
-    color: rgb(175, 80, 45);
-}
-
-.inner-deatil {
-    line-height: 3;
-}
-
-.download-world-of-titan-app .flex1 {
-    display: flex;
-}
-
-.flex1-heading {
-    margin-right: 30px;
-}
-
-.icons i {
-    font-size: 20px;
-}
-
-.download-world-of-titan-app .flex1 li {
-    padding: 0 10px;
-}
-
-.click-here {
-    border-bottom: 1px solid honeydew;
-}
-
-.click-here:hover {
-    border-bottom: 1px solid rgb(145, 64, 34);
-}
-
-.whatsapp-icon {
-    font-size: 22px;
-}
-
-
-/* prodcut page */
-
-.product_section{
-    margin: 1% 3%;
-    border: 2px solid red;
-}
-.product_section .product-img{
-    margin: 1% 1%;
-}
-.product_section .product-detail{
-    margin: 5% 1%;
-}
-.product_section .product-detail .product_heading {
-    justify-content: space-around;
-    word-spacing: 0.56rem;
-}
-
-.product-detail  .offer{
-    text-decoration: line-through;
-    font-size: 27px;
-    color: gray;
-}
-.product-detail .tax{
-    color: grey;
-    font-size: 20px;
-}
-.rating i{
-    color: orangered;
-    cursor: pointer;
-}
-.product-detail   h6{
-    font-size: 33px;
-    padding-top: 12%;
-    padding-left: 5%;
-}
-.product-detail .discount{
-    color: red;
-}
-.product-detail .emi{
-    flex-direction: column;
-}
-
-html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  /* -------------------------------- Header Starts Here -------------------------------- */
+ /* -------------------------------- Header Starts Here -------------------------------- */
   
   /* ------------------------------ Top Header Starts Here ---------------------------------*/
   
@@ -932,4 +533,718 @@ html {
   margin: 0 20px;
 }
 
-/* book my appoint css end here */
+
+/* -----------------------slider section start here -------------- */
+.main1{
+  height: 90vh;
+}
+.container {
+    width: 90%;
+    height: 500px;
+    background-color: aquamarine;
+    border: 2px solid blue;
+  }
+  .container img{
+    display: none;
+    width: 90vw;
+    height: 600px;  
+  }
+  .active img{
+    display: block;
+  }
+  .slider-button{
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    font-size: 25px;
+  
+    position: absolute;
+    z-index: 10;
+    top:50%;
+    font-weight: 600;
+    transition:0.6s;
+  }
+  #button-prev{
+    left:10px;
+    
+  }
+  #button-next{
+    right:10px;
+  }
+  .slider-button:hover{
+    background-color: #717171;
+  }
+  .dots-container{  
+    position: relative;
+    bottom: 60px;
+    left:47%;
+  }
+  
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 12px auto;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s;
+  }
+  .dot:hover {
+    background-color: #b75d5d;
+  }
+  .dots-container .activeDot{
+    background-color: rgb(212, 102, 80);
+  }
+  
+ 
+
+
+/* PRODUCTS */
+
+
+.product {
+  border: 5px solid red;
+  background: rgb(146, 146, 146);
+  margin: 1% 4%;
+  margin-top: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+
+
+#myvideo{
+    width: 90%;
+    height: 500px;
+    margin: 2% 4%;
+}
+
+
+/*  ----------------------------trending section start here */
+.trending_product{
+  width: 90%;
+  height: 515px;
+  margin: 0 4%;
+}
+.trending_watch_heading h2 {
+  text-align: center;
+  word-spacing: 0.56rem;
+  font-size: 30px;
+  line-height: 1.5;
+  padding-top: 2%;
+}
+
+.trending_product {
+  flex-direction: column;
+}
+
+.trending_product .trending_watch_image {
+  margin: 2% 2%;
+  flex-direction: row;
+  overflow-y: hidden;
+  padding: 1%;
+}
+
+
+
+.trending_product .trending_watch_image .watch_img {
+  cursor: pointer;
+  padding: 0 1%;
+  transition: all 0.2s linear;
+}
+
+.trending_product .trending_watch_image .watch_img:hover {
+  padding: 1% 1%;
+
+}
+
+.trending_product .trending_watch_image h5 {
+  padding: 2%;
+  font-size: 15px;
+}
+
+.trending_product .trending_watch_image  h6 span {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 900;
+  font-size: 13px;
+  padding: 2%;
+}
+
+.trending_product .trending_watch_image h6 {
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+}
+
+/* section digital add */
+
+.digital_adds{
+  width: 90%;
+  margin: 0 4%;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.digital_adds .top .content-left , .content-left2{
+  color: white;
+  text-align: center;
+  padding: 18% 5%;
+  font-size: 23px;
+  font-weight: bold;
+}
+.digital_adds .top .content-left a{
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.digital_adds .top .content-img{
+  position: relative;
+  left: -50px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.digital_adds .bottom .content-left2{
+  padding: 10% 5%;
+}
+.digital_adds .bottom .content-img2{
+  position: relative;
+  left: 40px;
+  bottom: 22px;
+  cursor: pointer;
+}
+
+/* section featured  */
+
+.featured_collections{
+  width: 90%;
+  height: 200px;
+  margin: 0 7%;
+  padding: 1%;
+  
+}
+.featured_collections .trending_watch_heading h2{
+  text-align: center;
+  padding: 2%;
+  line-height: 1.5;
+}
+.featured_collections .featured-img{
+  position: relative;
+  /* top: 1px; */
+  left: 10px;
+  
+}
+.featured_collections .featured-img h4{
+  text-align: center;
+  font-size: 30px;
+  color: goldenrod;
+  padding: 2%;
+ 
+}
+.featured_collections .featured-img p{
+  color: white;
+  flex-wrap: wrap;
+  padding: 2%;
+  text-align: center;
+  /* text-align: justify; */
+/* text-justify: inter-word; */
+ 
+}
+.featured_collections .featured-img>*{
+  padding: 2%;
+}
+
+
+.color{
+  width: 90%;
+  height: 550px;
+  margin: 0 4%;
+  background-color: black;
+}
+/* -----------------------------prodcut page----------------------------- */
+
+.product_detail{
+  display:  flex;
+  width: 90%;
+  margin: 2% 5%;
+}
+.product_img{
+  margin: 3%;
+}
+.product_details{
+  width: 50%;
+  margin: 3%;
+}
+.product_details .product_name{
+  font-size: 20px ;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.product_details .rating{
+  color: orangered;
+  margin-left: 10px;
+}
+.product_details p{
+  color: black;
+}
+.product_details .price {
+  padding:4%;
+}
+.product_details .price h6{
+  font-size: 20px;
+}
+.product_details .price .offer{
+  text-decoration: line-through;
+  font-size: 18px;
+  color:grey;
+}
+.product_details .price .discount{
+  color:red;
+}
+.product_details .price .tax{
+  color: grey;
+}
+.product_details .emi{
+  background: rgb(185, 184, 184);
+  margin: 3%;
+  padding: 2%;
+}
+.product_details .emi h6{
+  font-size: 17px;
+}
+.product_details .desc{
+  margin: 3%;
+  font-size: 23px;
+}
+.product_details .qty{
+  margin: 4%;
+}
+.product_details button , p{
+  font-size: 26px;
+  margin: 2%;
+  cursor: pointer;
+}
+.product_details .cart{
+  margin: 4%;
+}
+.product_details .cart button{
+  width: 20vw;
+  font-size: 23px;
+  font-weight: 900;
+  background-color: orangered;
+}
+.description{
+  margin: 2% 5%;
+}
+.description h1{
+  text-align: center;
+  font-size: 30px;
+  background: black;
+  color: white;
+}
+.description img{
+align-items: center;
+
+}
+ 
+/* ---------------follow us -------------------------*/
+.followus{
+  width:90%;
+  margin: 2% 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.followusimg h1{
+  font-size: 23px;
+  text-align: center;
+  margin: 2%;
+  font-weight: 900;
+}
+
+
+/* ------------------------------FOOTER starts here----------------------- */
+.section1 {
+  background-color: rgb(248, 245, 245);
+}
+
+.section1-container {
+  padding-bottom: 60px;
+}
+
+.section1-heading {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.section1-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-detail {
+  background-color: black;
+  width: 350px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.location-detail ul {
+  margin: 0 10px;
+}
+
+.location-detail ul li {
+  list-style: none;
+}
+
+.location-detail ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.inputBtn {
+  width: 220px;
+  padding: 17px 20px;
+  border: none;
+  outline: none;
+}
+
+.searchBtn {
+  width: 130px;
+  padding: 15px 20px;
+}
+
+
+
+/* section-2 */
+.section2 {
+  background-color: rgb(41, 40, 40);
+}
+
+.section2-container {
+  display: flex;
+  justify-content: space-around;
+  color: honeydew;
+  margin: 0 150px;
+}
+
+.section2-innerdiv {
+  width: 280px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section2-heading {
+  font-size: 20px;
+  line-height: 2;
+}
+
+.section2-innerdiv p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* section-3 */
+.section3-container {
+  margin: 40px 80px;
+  text-align: justify;
+}
+
+.section3-heading {
+  color: rgb(110, 110, 110);
+  margin: 10px 0;
+}
+
+.section3-para {
+  margin-bottom: 20px;
+  color: gray;
+  font-size: 14px;
+}
+
+.section3-know-more-btn {
+  position: absolute;
+  left: 1350px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  color: grey;
+}
+
+.section3-lowerDiv {
+  margin-top: 50px;
+  display: none;
+}
+
+.active {
+  display: block;
+  height: auto;
+}
+
+
+
+/* section-4 */
+.section4 {
+  background-color: rgb(41, 40, 40);
+  color: honeydew;
+  padding: 40px 0;
+}
+
+.section4-upperDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 120px;
+}
+
+.image {
+  width: 150px;
+  margin: 25px 10px 0 10px;
+}
+
+.section4-heading {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.section4-upperDiv ul li {
+  list-style: none;
+  font-size: 17px;
+}
+
+.section4-upperDiv ul li a {
+  text-decoration: none;
+  color: honeydew;
+  line-height: 3;
+}
+
+.section4-upperDiv ul li a:hover {
+  color: rgb(175, 80, 45);
+}
+
+.inner-deatil {
+  line-height: 3;
+  font-size: 17px;
+}
+
+.download-world-of-titan-app .flex1 {
+  display: flex;
+}
+
+.flex1-heading {
+  margin-right: 30px;
+}
+
+.icons i {
+  font-size: 20px;
+}
+
+.download-world-of-titan-app .flex1 li {
+  padding: 0 10px;
+}
+
+.click-here {
+  border-bottom: 1px solid honeydew;
+}
+
+.click-here:hover {
+  border-bottom: 1px solid rgb(145, 64, 34);
+}
+
+.whatsapp-icon {
+  font-size: 22px;
+}
