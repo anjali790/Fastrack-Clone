@@ -1,0 +1,143 @@
+.watch-main-div {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.poster {
+    width: 100vw;
+    height: 500px;
+}
+
+.watch-div {
+    margin: 30px 50px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.product-detail-div {
+    margin: 0 30px;
+}
+
+.cart {
+    color: grey;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    margin-right: 20px;
+}
+
+.cart-count {
+    background-color: red;
+    padding: 2px 5px;
+    margin-left: 10px;
+    color: black;
+    border-radius: 50%;
+}
+
+.itemInCart {
+    display: flex;
+}
+
+.cartImage {
+    width: 550px;
+    height: 550px;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.productName {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.watch-name{
+    font-size: 20px;
+}
+
+.addButton {
+    color: white;
+    background-color: rgb(193, 82, 42);
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.productDescription {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.product-mrp {
+    color: grey;
+}
+
+.product-mrp,
+.product-offerPrice {
+    font-size: 25px;
+}
+
+.item-mrp {
+    text-decoration: line-through;
+}
+
+.product-discount {
+    color: red;
+    font-size: 25px;
+}
+
+.product-EMI,
+.product-function {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    padding: 5px 10px;
+}
+
+.product-EMI {
+    margin-right: 20px;
+}
+
+.product-EMI-div {
+    margin-top: 20px;
+}
+
+.buy-now-btn,
+.product-availability-btn {
+    margin-top: 80px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.buy-now-btn {
+    background-color: rgb(193, 82, 42);
+}
+
+.product-availability-btn {
+    background-color: green;
+}
