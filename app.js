@@ -332,7 +332,6 @@ registerBtn.addEventListener("click", () => {
 
 // ---------------------------- Section on click "SIGN UP NOW" ends here ----------------- //
 
-
 // ---------------------------- Carousel Starts here ----------------- //
 
 const trendingWatchImage = document.querySelectorAll(".trending_watch_image");
@@ -343,7 +342,7 @@ trendingWatchImage.forEach((item, i) => {
   let a = item.getBoundingClientRect();
   let b = a.width;
 
-  console.log(trendingNxtBtn[i]);
+  // console.log(trendingNxtBtn[i]);
 
   trendingNxtBtn[i].addEventListener("click", () => {
     item.scrollLeft += b;
@@ -359,62 +358,76 @@ trendingWatchImage.forEach((item, i) => {
 
 // ---------------------------- Cart Functinality Starts here ---------------------------- //
 
-// var main1 = document.querySelector(".watch-main-div");
-// var cart = [];
-// var data = [];
-// (async () => {
-//   let response = await fetch(`https://avish-test-api.herokuapp.com/watches`);
-//   let data = await response.json();
-//   console.log(data);
+var main1 = document.querySelector(".watch-main-div");
+var cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cartNumber = document.querySelector(".cart-number");
+cartNumber.innerHTML = `<sup class="cart-count">${cart.length}<sup>`;
+var data = [];
+(async () => {
+  let response = await fetch(`https://avish-test-api.herokuapp.com/watches`);
+  let data = await response.json();
+  // console.log(data);
 
-//   data.map((oneData) => {
-//     let main1 = document.querySelector(".watch-main-div");
-//     main1.innerHTML += `<div class="watch-div">
-//       <img src=${oneData.urlImg}>
-//       <div class="btn-div">
-//       <h2 class="watch-name">${oneData.Name}</h2>
-//       <button class="addButton" onclick="add_to_cart(event)" id=${oneData.id}>ADD</button>
-//       </div>
-//       </div>`;
-//   });
-// })();
+  data.map((oneData) => {
+    let main1 = document.querySelector(".watch-main-div");
+    main1.innerHTML += `<div class="watch-div">
+      <img src=${oneData.urlImg}>
+      <div class="btn-div">
+      <h2>${oneData.Name}</h2>
+      <button class="addButton" onclick="add_to_cart(event)" id=${oneData.id}>Add to Cart</button>
+      </div>
+      </div>`;
+  });
+})();
 
-// async function add_to_cart(e) {
-//   let response = await fetch(`https://avish-test-api.herokuapp.com/watches`);
-//   let data = await response.json();
-//   console.log(e.target.id)
-//   let idd = e.target.id;
-//   for (let i = 0; i < data.length; i++) {
-//     if (data[i].id == idd) {
-//       cart.push(data[i]);
-//     }
+async function add_to_cart(e) {
+  let response = await fetch(`https://avish-test-api.herokuapp.com/watches`);
+  let data = await response.json();
+  // console.log(e.target.id)
+  let idd = e.target.id;
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].id == idd) {
+      cart.push(data[i]);
+    }
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  let cartNumber = document.querySelector(".cart-number");
+  cartNumber.innerHTML = `<sup class="cart-count">${cart.length}<sup>`;
+}
 
-//   }
-//   let cartNumber = document.querySelector('.cart-number');
-//   cartNumber.innerHTML = `<sup class="cart-count">${cart.length}<sup>`
-// }
-
-// async function cart_button() {
-//   main1.innerHTML = `
-//   <div class="cartt">
+async function cart_button() {
+  main1.innerHTML = `
+  <div class="cartt">
   
-//   </div>`
+  </div>`;
 
-//   let cart_div = document.querySelector(".cartt");
-//   cart.map((oneData) => {
-//     cart_div.innerHTML += `<div class="itemInCart">
-//     <div class="cart-desc-div"><img class="cartImage" src=${oneData.urlImg}></div>
-//     <div product-detail-div><h2 class="productName">${oneData.Name}</h2>
-//     <h3 class="productDescription">${oneData.description.para}</h3>
-//     <span class="product-mrp">MRP &#8377 <span class="item-mrp">${oneData.price}</span></span><span class="product-offerPrice"> OFFER PRICE &#8377 ${oneData.offerPrice}</span><span class="product-discount">(${oneData.discount}% Off)</span>
-//     <div class="product-EMI-div"><span class="product-EMI">NO COST EMI</span><span class="product-function">${oneData.function}</span></div>
-//     <div><button class="buy-now-btn">BUY NOW</button><button class="product-availability-btn">${oneData.availabilty}</button>
-//     </div>
-//     </div>
+  let cart_div = document.querySelector(".cartt");
+  cart.map((oneData) => {
+    cart_div.innerHTML += `<div class="itemInCart">
+    <div class="cart-desc-div"><img class="cartImage" src=${oneData.urlImg}></div>
+    <div product-detail-div><h2 class="productName">${oneData.Name}</h2>
+    <h3 class="productDescription">${oneData.description.para}</h3>
+    <span class="product-mrp">MRP &#8377 <span class="item-mrp">${oneData.price}</span></span><span class="product-offerPrice"> OFFER PRICE &#8377 ${oneData.offerPrice}</span><span class="product-discount">(${oneData.discount}% Off)</span>
+    <div class="product-EMI-div"><span class="product-EMI">NO COST EMI</span><span class="product-function">${oneData.function}</span></div>
+    <button class="remove_btn">Remove</button>
+    <div><button class="buy-now-btn">BUY NOW</button><button class="product-availability-btn">${oneData.availabilty}</button>
+    </div>
+    </div>
     
-//     </div>`
-//   });
-// };
+    </div>`;
+
+ });
+
+ const a = document.querySelector(".remove_btn");
+ const b = document.querySelector(".itemInCart");
+
+a.addEventListener("click", function () {
+  b.style.display = "none";
+})
+
+
+
+}
 
 
 // ---------------------------- Cart Functinality Ends here ---------------------------- //

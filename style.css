@@ -2,473 +2,483 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* width: 100%; */
 }
 
 .flex {
   display: flex;
 }
 
-
 html {
   font-size: 62.5%;
 }
-
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
- /* -------------------------------- Header Starts Here -------------------------------- */
-  
-  /* ------------------------------ Top Header Starts Here ---------------------------------*/
+/* -------------------------------- Header Starts Here -------------------------------- */
 
+/* ------------------------------ Top Header Starts Here ---------------------------------*/
 
-  .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(41, 41, 41);
-    padding: 15px;
-    border-bottom: 1px solid rgb(78, 78, 78);
-  }
-  
-  .top .left:first-child {
-    margin-left: 60px;
-  }
-  
-  .top a {
-    color: rgb(175, 173, 173);
-    margin-right: 50px;
-    font-weight: 800;
-    text-decoration: none;
-  }
-  
-  .top #currency {
-    margin-right: 2px;
-  }
-  
-  /* ----------------------------------- Top Header Ends Here ----------------------------------- */
-  
-  /* ----------------------------------Bottom Header Starts Here ---------------------------------*/
-  
-  .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(41, 41, 41);
-    padding: 25px;
-  }
-  
-  .bottom .right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .bottom a {
-    color: white;
-    margin-right: 50px;
-    font-weight: 800;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .bottom .left:first-child i {
-    font-size: 2rem;
-    margin-left: 50px;
-  }
-  
-  .bottom .right:last-child i {
-    font-size: 1.5rem;
-  }
-  
-  #logo {
-    height: 40px;
-    width: 150px;
-    margin-right: 50px;
-  }
-  
-  #watch:hover,
-  #audio:hover,
-  #eyewear:hover,
-  #bags:hover,
-  #perfumes:hover,
-  #offers:hover {
-    color: orangered;
-  }
-  
-  /* ----------------------------------Bottom Header Ends Here ---------------------------------*/
-  
-  /* ----------------------- Section on hovering "Watches Starts Here" ----------------------------- */
-  
-  #watch_hover {
-    display: flex;
-    background-color: rgb(41, 41, 41);
-    color: white;
-    padding: 20px 50px 20px 60px;
-    display: none;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .watch_style {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .watch_style h2 {
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .watch_style img {
-    height: 70px;
-    width: 70px;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-  
-  #watch_hover a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
-  }
-  
-  .watch_images {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .watch_shopCollectibles {
-    margin-right: 60px;
-  }
-  
-  #fig_caption {
-    display: flex;
-    align-items: center;
-  }
-  
-  #watch_img {
-    height: 420px;
-  }
-  
-  .watch_buy {
-    width: 75%;
-  }
-  
-  #watch_btn {
-    width: 90%;
-    padding: 10px;
-    color: white;
-    background-color: rgb(75, 73, 73);
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* ----------------------- Section on hovering "Watches" Ends Here ----------------------------- */
-  
-  /* ------------------- Section on hovering "Smart and Audio" Starts Here ------------------------- */
-  
-  #audio_hover {
-    display: flex;
-    background-color: rgb(41, 41, 41);
-    padding: 20px 50px 20px 60px;
-    display: none;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .watch_neckbands {
-    display: flex;
-    width: 50%;
-  }
-  
-  .watches_bands,
-  .watches_wireless {
-    margin-right: 20px;
-    width: 50%;
-  }
-  
-  .watches_bands button,
-  .watches_wireless button {
-    padding: 10px;
-    width: 100%;
-    background-color: rgb(75, 73, 73);
-    color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .watch_neckbands a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-  }
-  
-  .watch_neckbands a h2 {
-    font-size: 15px;
-  }
-  
-  #audio_hover figure {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #audio_hover figure a {
-    margin-right: 20px;
-  }
-  
-  #audio_hover figure a img {
-    width: 98%;
-  }
-  
-  /* ------------------- Section on hovering "Smart and Audio" Ends Here ------------------------- */
-  
-  /* ---------------------- Section on hovering "Bags & MORE" Starts Here ---------------------------- */
-  
-  #bags_hover {
-    display: flex;
-    background-color: rgb(41, 41, 41);
-    display: none;
-    padding: 20px 50px 20px 60px;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .bags_content {
-    display: flex;
-  }
-  
-  .bags_style {
-    display: flex;
-    width: 50%;
-    color: white;
-  }
-  
-  #bags_hover a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
-  }
-  
-  #bag_heading {
-    font-size: 15px;
-  }
-  
-  .bags_guys h2,
-  .bags_guys a,
-  .bags_girls h2,
-  .bags_girls a,
-  .bags_category h2,
-  .bags_category a {
-    margin: 0 45px 20px 0;
-  }
-  
-  #bags_img {
-    width: 50%;
-  }
-  
-  #bags_img img {
-    height: 300px;
-  }
-  
-  /* ---------------------- Section on hovering "Bags & MORE" Ends Here ---------------------------- */
-  
-  /* ----------------------- Section on hovering "Perfumes" Starts Here -------------------------- */
-  
-  #perfumes_hover {
-    display: flex;
-    background-color: rgb(41, 41, 41);
-    padding: 20px 50px 20px 60px;
-    display: none;
-    position: absolute;
-    width: 100%;
-  }
-  
-  #perfumes_hover .perfumes_view {
-    width: 30%;
-  }
-  
-  .perfumes_both {
-    display: flex;
-  }
-  
-  .perfumes_both a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-  }
-  
-  .perfumes_both a h2 {
-    font-size: 15px;
-  }
-  
-  .perfumes_guys,
-  .perfumes_girls {
-    width: 50%;
-  }
-  
-  .perfumes_view {
-    margin-right: 20px;
-  }
-  
-  .perfumes_view button {
-    padding: 10px;
-    width: 100%;
-    background-color: rgb(75, 73, 73);
-    color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #perfumes_hover figure {
-    width: 70%;
-  }
-  
-  #perfumes_img img {
-    height: 225px;
-    width: 100%;
-  }
-  
-  #perfumes_hover figure figcaption {
-    text-align: center;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 10px;
-  }
-  
-  #perfumes_hover figure a {
-    text-decoration: none;
-  }
-  
-  /* ----------------------- Section on hovering "Perfumes" Ends Here -------------------------- */
-  
-  /* ------------------- Section on hovering "Offers And More" Starts Here --------------------- */
-  
-  #offers_hover {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(41, 41, 41);
-    padding: 20px 50px 20px 60px;
-    display: none;
-    position: absolute;
-    width: 100%;
-  }
-  
-  #offers_hover a img {
-    height: 200px;
-  }
-  
-  /* -------------------- Section on hovering "Offers And More" Ends Here ---------------------- */
-  
-  /* ---------------------------------------- Header Ends Here --------------------------------- */
-  
-  /* -------------------------------- Section on click "BRANDS" starts here -------------------- */
-  
-  #brands_click {
-    padding: 50px 80px;
-    text-align: center;
-    display: none;
-  }
-  
-  #brands_click h1 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: rgb(41, 41, 41);
-  }
-  
-  #brands_click figure {
-    display: flex;
-    margin-bottom: 50px;
-  }
-  
-  #brands_click figure a .bigger_img {
-    height: 400px;
-    width: 350px;
-  }
-  
-  #brands_click figure a .mid_img {
-    margin: 0 20px;
-  }
-  
-  #brands_click figure a .smaller_img {
-    height: 20%;
-    width: 40%;
-  }
-  
-  /* -------------------------------- Section on click "BRANDS" ends here -------------------- */
-  
-  /* ----------------------- Section on click "CURRENCY SELECTOR" starts here ---------------- */
-  
-  #currency_click {
-    background-color: rgb(41, 41, 41);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 50px;
-    display: none;
-  }
-  
-  #currency_click h3 {
-    color: white;
-    text-align: center;
-    letter-spacing: 2px;
-    font-weight: lighter;
-  }
-  
-  #currency_click button {
-    padding: 15px 80px;
-    border: 1px solid rgb(148, 146, 146);
-    background-color: rgb(26, 25, 25);
-    color: rgb(110, 110, 110);
-    font-weight: 800;
-    margin-right: 20px;
-    margin-top: 30px;
-  }
-  
-  /* -------------------------- Section on click "CURRENCY SELECTOR" ends here --------------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
 
-
-  /* Book my appoint css start here */
- .container , .container2{
+.top {
   display: flex;
-  flex-direction: column;
-  margin: 2% 5%;
- } 
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  padding: 15px;
+  border-bottom: 1px solid rgb(78, 78, 78);
+  overflow-x: hidden;
+}
 
-.upperDiv{
+.top .left:first-child {
+  margin-left: 60px;
+}
+
+.top a {
+  color: rgb(175, 173, 173);
+  margin-right: 50px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.top #currency {
+  margin-right: 2px;
+}
+
+/* ----------------------------------- Top Header Ends Here ----------------------------------- */
+
+/* ----------------------------------Bottom Header Starts Here ---------------------------------*/
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  padding: 25px;
+  overflow-x: hidden;
+}
+
+.bottom .right {
+  display: flex;
+  align-items: center;
+}
+
+.bottom a {
+  color: white;
+  margin-right: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.bottom .left:first-child i {
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+.bottom .right:last-child i {
+  font-size: 1.5rem;
+}
+
+#logo {
+  height: 40px;
+  width: 150px;
+  margin-right: 50px;
+}
+
+#watch:hover,
+#audio:hover,
+#eyewear:hover,
+#bags:hover,
+#perfumes:hover,
+#offers:hover {
+  color: orangered;
+}
+
+/* ----------------------------------Bottom Header Ends Here ---------------------------------*/
+
+/* ----------------------- Section on hovering "Watches Starts Here" ----------------------------- */
+
+#watch_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.watch_style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch_style h2 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.watch_style img {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#watch_hover a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.watch_images {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.watch_shopCollectibles {
+  margin-right: 60px;
+}
+
+#fig_caption {
+  display: flex;
+  align-items: center;
+}
+
+#watch_img {
+  height: 420px;
+}
+
+.watch_buy {
+  width: 75%;
+}
+
+#watch_btn {
+  width: 90%;
+  padding: 10px;
+  color: white;
+  background-color: rgb(75, 73, 73);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------------- Section on hovering "Watches" Ends Here ----------------------------- */
+
+/* ------------------- Section on hovering "Smart and Audio" Starts Here ------------------------- */
+
+#audio_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.watch_neckbands {
+  display: flex;
+  width: 50%;
+}
+
+.watches_bands,
+.watches_wireless {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.watches_bands button,
+.watches_wireless button {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(75, 73, 73);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.watch_neckbands a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.watch_neckbands a h2 {
+  font-size: 15px;
+}
+
+#audio_hover figure {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#audio_hover figure a {
+  margin-right: 20px;
+}
+
+#audio_hover figure a img {
+  width: 100%;
+  height: 92%;
+}
+
+/* ------------------- Section on hovering "Smart and Audio" Ends Here ------------------------- */
+
+/* ---------------------- Section on hovering "Bags & MORE" Starts Here ---------------------------- */
+
+#bags_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  display: none;
+  padding: 20px 50px 20px 60px;
+  position: absolute;
+  width: 100%;
+}
+
+.bags_content {
   display: flex;
 }
 
-.container  image{
+.bags_style {
+  display: flex;
+  width: 50%;
+  color: white;
+}
+
+#bags_hover a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+#bag_heading {
+  font-size: 15px;
+}
+
+.bags_guys h2,
+.bags_guys a,
+.bags_girls h2,
+.bags_girls a,
+.bags_category h2,
+.bags_category a {
+  margin: 0 45px 20px 0;
+}
+
+#bags_img {
+  width: 50%;
+}
+
+#bags_img img {
+  height: 300px;
+  width: 100%;
+}
+
+/* ---------------------- Section on hovering "Bags & MORE" Ends Here ---------------------------- */
+
+/* ----------------------- Section on hovering "Perfumes" Starts Here -------------------------- */
+
+#perfumes_hover {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+#perfumes_hover .perfumes_view {
+  width: 30%;
+}
+
+.perfumes_both {
+  display: flex;
+}
+
+.perfumes_both a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.perfumes_both a h2 {
+  font-size: 15px;
+}
+
+.perfumes_guys,
+.perfumes_girls {
+  width: 50%;
+}
+
+.perfumes_view {
+  margin-right: 20px;
+}
+
+.perfumes_view button {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(75, 73, 73);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#perfumes_hover figure {
+  width: 70%;
+}
+
+#perfumes_img img {
+  height: 255px;
+}
+
+#perfumes_hover figure figcaption {
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#perfumes_hover figure a {
+  text-decoration: none;
+}
+
+/* ----------------------- Section on hovering "Perfumes" Ends Here -------------------------- */
+
+/* ------------------- Section on hovering "Offers And More" Starts Here --------------------- */
+
+#offers_hover {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(41, 41, 41);
+  padding: 20px 50px 20px 60px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+#offers_hover a img {
+  height: 200px;
+  width: 100%;
+}
+
+/* -------------------- Section on hovering "Offers And More" Ends Here ---------------------- */
+
+/* ---------------------------------------- Header Ends Here --------------------------------- */
+
+/* -------------------------------- Section on click "BRANDS" starts here -------------------- */
+
+#brands_click {
+  padding: 50px 80px;
+  text-align: center;
+  display: none;
+}
+
+#brands_click h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: rgb(41, 41, 41);
+}
+
+#brands_click figure {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+#brands_click figure a .bigger_img {
+  height: 400px;
+  width: 350px;
+}
+
+#brands_click figure a .mid_img {
+  margin: 0 20px;
+}
+
+#brands_click figure a .smaller_img {
+  height: 20%;
+  width: 40%;
+}
+
+/* -------------------------------- Section on click "BRANDS" ends here -------------------- */
+
+/* ----------------------- Section on click "CURRENCY SELECTOR" starts here ---------------- */
+
+#currency_click {
+  background-color: rgb(41, 41, 41);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 50px;
+  display: none;
+}
+
+#currency_click h3 {
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+#currency_click button {
+  padding: 15px 80px;
+  border: 1px solid rgb(148, 146, 146);
+  background-color: rgb(26, 25, 25);
+  color: rgb(110, 110, 110);
+  font-weight: 800;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+/* -------------------------- Section on click "CURRENCY SELECTOR" ends here --------------- */
+
+/* Book my appoint css start here */
+.container,
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5%;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.upperDiv {
+  display: flex;
+}
+
+.container image {
   width: 600px;
   margin: 30px 25px;
 }
 
-.right-box{
+.right-box {
   margin: 30px 20px;
   width: 750px;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
 }
 
-#input{
+#input {
   width: 100%;
   height: 35px;
   margin: 20px 0;
@@ -476,7 +486,7 @@ body {
   outline: none;
 }
 
-.state{
+.state {
   width: 774px;
   height: 35px;
   margin: 20px 0;
@@ -484,7 +494,7 @@ body {
   outline: none;
 }
 
-.container .form .submitBtn{
+.container .form .submitBtn {
   padding: 10px 0;
   background-color: black;
   color: white;
@@ -494,129 +504,126 @@ body {
   margin: 20px 0;
 }
 
-.container .lowerDiv{
+.container .lowerDiv {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
 }
 
- .container .lowerDiv h2{
+.container .lowerDiv h2 {
   font-size: 33px;
   margin-bottom: 10px;
-} 
-.container .lowerDiv p{
+}
+.container .lowerDiv p {
   font-size: 18px;
 }
-.container-select{
+.container-select {
   display: flex;
   margin: 2% 1%;
 }
-.container2 #input{
+.container2 #input {
   width: 100%;
   height: 35px;
   margin: 20px 0;
   padding: 0px 10px;
   outline: none;
 }
-.container2 .city , .store{
-    width: 374px;
-    height: 40px;
-    margin: 20px 30px;
-    padding: 0px 10px;
-    outline: none;
- 
+.container2 .city,
+.store {
+  width: 374px;
+  height: 40px;
+  margin: 20px 30px;
+  padding: 0px 10px;
+  outline: none;
 }
-.container-date input{
+.container-date input {
   width: 250px;
   height: 40px;
   margin: 0 20px;
 }
 
-
 /* -----------------------slider section start here -------------- */
-.main1{
-  height: 90vh;
+.main1 {
+  /* height: 90vh; */
+  width: 100%;
+  overflow-x: hidden;
 }
 .container {
-    width: 90%;
-    height: 500px;
-    background-color: aquamarine;
-    border: 2px solid blue;
-  }
-  .container img{
-    display: none;
-    width: 90vw;
-    height: 600px;  
-  }
-  .active img{
-    display: block;
-  }
-  .slider-button{
-    background: rgba(255, 255, 255, 0.55);
-    cursor: pointer;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    font-size: 25px;
-  
-    position: absolute;
-    z-index: 10;
-    top:50%;
-    font-weight: 600;
-    transition:0.6s;
-  }
-  #button-prev{
-    left:10px;
-    
-  }
-  #button-next{
-    right:10px;
-  }
-  .slider-button:hover{
-    background-color: #717171;
-  }
-  .dots-container{  
-    position: relative;
-    bottom: 60px;
-    left:47%;
-  }
-  
-  .dot {
-    cursor:pointer;
-    height: 13px;
-    width: 13px;
-    margin: 12px auto;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s;
-  }
-  .dot:hover {
-    background-color: #b75d5d;
-  }
-  .dots-container .activeDot{
-    background-color: rgb(212, 102, 80);
-  }
-  
- 
+  /* height: 500px; */
+  margin: auto;
+}
+.container img {
+  display: none;
+  width: 100%;
+  height: 400px;
+}
 
+.active img {
+  display: block;
+}
+.slider-button {
+  /* background: rgba(255, 255, 255, 0.55); */
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  font-weight: 600;
+  transition: 0.6s;
+}
+#button-prev {
+  left: 10px;
+}
+#button-next {
+  right: 10px;
+}
+.slider-button:hover {
+  background-color: #717171;
+}
+.dots-container {
+  position: relative;
+  bottom: 60px;
+  left: 47%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 12px auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s;
+}
+.dot:hover {
+  background-color: #b75d5d;
+}
+.dots-container .activeDot {
+  background-color: rgb(212, 102, 80);
+}
 
 /* PRODUCTS */
 
-
 .product {
-  border: 5px solid red;
-  background: rgb(146, 146, 146);
-  margin: 1% 4%;
-  margin-top: 0;
+  position: relative;
+  top: -120px;
+  /* border: 5px solid red; */
+  /* background: rgb(146, 146, 146); */
+  /* margin: 1% 4%; */
+  /* margin-top: 0; */
   overflow: hidden;
   padding: 20px;
+  width: 100%;
 }
 
 .product-category {
@@ -794,21 +801,32 @@ body {
   margin-bottom: 10px;
 }
 
-
-
-#myvideo{
-    width: 90%;
-    height: 500px;
-    margin: 2% 4%;
+#myvideo {
+  width: 90%;
+  height: 500px;
+  margin: 2% 4%;
 }
 
-
 /*  ----------------------------trending section start here */
-.trending_product{
+.trending_product {
   width: 90%;
   height: 515px;
   margin: 0 4%;
+  overflow-x: hidden;
 }
+
+.trend {
+  position: relative;
+  top: -300px;
+  overflow-x: hidden;
+}
+
+.trends {
+  position: relative;
+  top: -350px;
+  overflow-x: hidden;
+}
+
 .trending_watch_heading h2 {
   text-align: center;
   word-spacing: 0.56rem;
@@ -834,7 +852,7 @@ body {
 
 .trending-prev-btn {
   position: relative;
-  left: -10px;
+  left: 0;
   top: -200px;
   width: 2%;
 }
@@ -854,7 +872,6 @@ body {
 
 .trending_product .trending_watch_image .watch_img:hover {
   padding: 1% 1%;
-
 }
 
 .trending_product .trending_watch_image h5 {
@@ -862,7 +879,7 @@ body {
   font-size: 15px;
 }
 
-.trending_product .trending_watch_image  h6 span {
+.trending_product .trending_watch_image h6 span {
   text-decoration: line-through;
   color: grey;
   font-weight: 900;
@@ -878,42 +895,58 @@ body {
 
 /* section digital add */
 
-.digital_adds{
+.digital_adds {
+  position: relative;
+  top: -300px;
   width: 45%;
   margin: 0 3%;
   background-color: black;
   box-sizing: border-box;
 }
 
-.digital_adds .top .content-left , .content-left2{
+.digital_adds .top .content-img #digital_img1 {
+  height: 500px;
+  width: 1000px;
+  z-index: 1;
+}
+
+#digital_img2 {
+  position: relative;
+  height: 500px;
+  width: 1000px;
+  z-index: 1;
+}
+
+.digital_adds .top .content-left,
+.content-left2 {
   color: white;
   text-align: center;
   padding: 18% 5%;
   font-size: 25px;
   font-weight: bold;
 }
-.digital_adds .top .content-left a{
+.digital_adds .top .content-left a {
   color: white;
   font-size: 15px;
   cursor: pointer;
   text-decoration: underline;
 }
-.digital_adds .top .content-img{
+.digital_adds .top .content-img {
   position: relative;
   left: 220px;
   top: 15px;
   cursor: pointer;
 }
 
-.digital_adds .bottom .content-left2{
+.digital_adds .bottom .content-left2 {
   padding: 10% 5%;
   color: black;
 }
-.digital_adds .bottom .content-left2 a{
+.digital_adds .bottom .content-left2 a {
   color: black;
   text-decoration: underline;
 }
-.digital_adds .bottom .content-img2{
+.digital_adds .bottom .content-img2 {
   position: relative;
   left: 40px;
   bottom: 22px;
@@ -922,33 +955,40 @@ body {
 
 /* section featured  */
 
-.featured_collections{
+.featured_collections {
+  position: relative;
+  top: -150px;
   width: 90%;
   height: 250px;
   margin: 0 7%;
   padding: 1%;
-  
+  /* overflow-x: hidden; */
 }
-.featured_collections .trending_watch_heading h2{
+
+.featured {
+  /* position: relative; */
+  top: -400px;
+  /* overflow-x: hidden; */
+}
+
+.featured_collections .trending_watch_heading h2 {
   text-align: center;
   padding: 2%;
   line-height: 1.5;
 }
-.featured_collections .featured-img{
+.featured_collections .featured-img {
   position: relative;
   display: flex;
   justify-content: center;
   left: -30px;
-  
 }
-.featured_collections .featured-img h4{
+.featured_collections .featured-img h4 {
   text-align: center;
   font-size: 20px;
   color: goldenrod;
   margin-top: 20px;
- 
 }
-.featured_collections .featured-img p{
+.featured_collections .featured-img p {
   color: white;
   flex-wrap: wrap;
   padding: 2%;
@@ -960,122 +1000,55 @@ body {
   padding: 0 2rem;
 }
 
-
-.color{
+.color {
+  position: relative;
+  top: -150px;
+  z-index: -1;
   width: 100%;
   height: 300px;
   background-color: rgb(41, 41, 41);
   margin-top: 100px;
 }
-/* -----------------------------prodcut page----------------------------- */
 
-.product_detail{
-  display:  flex;
-  width: 90%;
-  margin: 2% 5%;
+.featured_color {
+  top: -400px;
 }
-.product_img{
-  margin: 3%;
-}
-.product_details{
-  width: 50%;
-  margin: 3%;
-}
-.product_details .product_name{
-  font-size: 20px ;
-  padding-top: 5%;
-  display: flex;
-  justify-content: space-around;
-}
-.product_details .rating{
-  color: orangered;
-  margin-left: 10px;
-}
-.product_details p{
-  color: black;
-}
-.product_details .price {
-  padding:4%;
-}
-.product_details .price h6{
-  font-size: 20px;
-}
-.product_details .price .offer{
-  text-decoration: line-through;
-  font-size: 18px;
-  color:grey;
-}
-.product_details .price .discount{
-  color:red;
-}
-.product_details .price .tax{
-  color: grey;
-}
-.product_details .emi{
-  background: rgb(185, 184, 184);
-  margin: 3%;
-  padding: 2%;
-}
-.product_details .emi h6{
-  font-size: 17px;
-}
-.product_details .desc{
-  margin: 3%;
-  font-size: 23px;
-}
-.product_details .qty{
-  margin: 4%;
-}
-.product_details button , p{
-  font-size: 26px;
-  margin: 2%;
-  cursor: pointer;
-}
-.product_details .cart{
-  margin: 4%;
-}
-.product_details .cart button{
-  width: 20vw;
-  font-size: 23px;
-  font-weight: 900;
-  background-color: orangered;
-}
-.description{
-  margin: 2% 5%;
-}
-.description h1{
-  text-align: center;
-  font-size: 30px;
-  background: black;
-  color: white;
-}
-.description img{
-align-items: center;
 
-}
- 
 /* ---------------follow us -------------------------*/
-.followus{
-  width:90%;
-  margin: 2% 5%;
+.followus {
+  position: relative;
+  top: -400px;
+  /* bottom: -400px; */
+  width: 100%;
+  /* margin: 2% 5%; */
+  margin: 2% 0;
   display: flex;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 .followusimg {
   text-align: center;
 }
 .followusimg img {
   margin: 5px;
+  /* height: 1000px; */
 }
-.followusimg h1{
+.followusimg h1 {
   font-size: 23px;
   text-align: center;
   margin: 2%;
   font-weight: 900;
 }
 
-
 /* ------------------------------FOOTER starts here----------------------- */
+
+#footer {
+  position: relative;
+  /* top: -350px; */
+  /* bottom: -350px; */
+  overflow-x: hidden;
+}
+
 .section1 {
   background-color: rgb(248, 245, 245);
 }
@@ -1133,8 +1106,6 @@ align-items: center;
   padding: 15px 20px;
 }
 
-
-
 /* section-2 */
 .section2 {
   background-color: rgb(41, 40, 40);
@@ -1162,10 +1133,6 @@ align-items: center;
   font-size: 16px;
   line-height: 1.5;
 }
-
-
-
-
 
 /* section-3 */
 .section3-container {
@@ -1204,8 +1171,6 @@ align-items: center;
   height: auto;
 }
 
-
-
 /* section-4 */
 .section4 {
   background-color: rgb(41, 40, 40);
@@ -1222,6 +1187,7 @@ align-items: center;
 .image {
   width: 150px;
   margin: 25px 10px 0 10px;
+  height: 45px;
 }
 
 .section4-heading {
@@ -1280,9 +1246,10 @@ align-items: center;
 #myvideo {
   width: 100%;
   margin-left: 0;
+  position: relative;
+  top: -150px;
 }
 
- 
 /* ---------------------------------- Section on click "LOGIN" starts here ------------------------- */
 
 #login_click {
@@ -1481,7 +1448,8 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 
-.fb_login .buttons .facebook, .fb_login .buttons .google {
+.fb_login .buttons .facebook,
+.fb_login .buttons .google {
   outline: none;
   border: none;
   background-color: black;
@@ -1628,20 +1596,23 @@ input::-webkit-inner-spin-button {
   margin-left: 40%;
 }
 
-#signup_click .signup_box #receive, #signup_click .signup_box #t_c {
+#signup_click .signup_box #receive,
+#signup_click .signup_box #t_c {
   display: flex;
   margin-bottom: 20px;
   align-items: center;
   margin-left: 20px;
 }
 
-#signup_click .signup_box #receive #checkbox, #signup_click .signup_box #t_c #checkbox {
+#signup_click .signup_box #receive #checkbox,
+#signup_click .signup_box #t_c #checkbox {
   height: 15px;
   width: 15px;
   margin-right: 10px;
 }
 
-#signup_click .signup_box #receive h2, #signup_click .signup_box #t_c h2 {
+#signup_click .signup_box #receive h2,
+#signup_click .signup_box #t_c h2 {
   font-weight: 400;
 }
 
@@ -1666,26 +1637,28 @@ input::-webkit-inner-spin-button {
 
 .otp-container {
   display: none;
+  position: relative;
+  top: -100px;
 }
 
-logo{
+logo {
   width: 300px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
-.verify-mobile-otp-heading{
+.verify-mobile-otp-heading {
   margin: 0 10px;
   font-size: 2.5rem;
 }
 
-.otp-container{
- text-align: center;
- width: 400px;
- margin: 0 auto;
- margin-top: 40px;
+.otp-container {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-.otp-para{
+.otp-para {
   margin-top: 25px;
   margin-bottom: 35px;
   font-size: 1.5rem;
@@ -1695,7 +1668,7 @@ logo{
   font-size: 2rem;
 }
 
-.otp-input{
+.otp-input {
   width: 350px;
   padding: 15px 0;
   margin-top: 10px;
@@ -1704,7 +1677,7 @@ logo{
   text-align: center;
 }
 
-.verify-OTP-Btn{
+.verify-OTP-Btn {
   width: 400px;
   color: white;
   background-color: black;
@@ -1713,17 +1686,21 @@ logo{
   cursor: pointer;
 }
 
-.otp-resend{
+.otp-resend {
   margin-top: 30px;
   font-size: 1.5rem;
 }
 
-
 /* --------------------------- Section on click "Request OTP" Ends Here ----------------------------- */
 
-
 /* ------------------------------- Cart Functionality Starts Here ----------------------------- */
-/* 
+
+.main {
+  position: relative;
+  right: 30px;
+  margin: auto;
+}
+
 .watch-main-div {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -1785,26 +1762,32 @@ img {
 .btn-div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+.btn-div h2 {
+  width: 70%;
+}
 
-.watch-name{
+.watch-name {
   font-size: 20px;
 }
 
 .addButton {
+  position: relative;
+  left: 60px;
   color: white;
   background-color: rgb(193, 82, 42);
-  padding: 10px 15px;
-  font-size: 18px;
+  padding: 5px 15px;
+  font-size: 15px;
   border: none;
-  color: white;
   font-weight: bold;
   width: 80px;
   height: 40px;
   text-align: center;
   margin-top: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .productDescription {
@@ -1850,7 +1833,7 @@ img {
 
 .buy-now-btn,
 .product-availability-btn {
-  margin-top: 80px;
+  margin-top: 20px;
   padding: 10px 20px;
   font-size: 20px;
   border: none;
@@ -1866,8 +1849,18 @@ img {
 
 .product-availability-btn {
   background-color: green;
-} */
+}
 
-
+.remove_btn {
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
 /* ------------------------------- Cart Functionality Ends Here ----------------------------- */

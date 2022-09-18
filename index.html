@@ -27,7 +27,10 @@
           <a href="#" id="login">LOGIN</a>
           <a href="#">WISHLIST</a>
           <a href="./Book-My-Appointment/index.html">BOOK MY APPOINTMENT</a>
-          <a href="#">CART(0)</a>
+          <!-- <a href="#">CART(0)</a> -->
+          <button class="cart" onclick="cart_button()">
+            <i class="fa fa-shopping-cart" id="cart_font" aria-hidden="true"></i>Cart<span class="cart-number"></span>
+        </button>
         </div>
       </div>
       <!---------------------- Top Header Ends Here ------------------------------->
@@ -419,7 +422,7 @@
               <img src="https://www.fastrack.in/wps/wcm/connect/fastrack/532d3d01-1405-4e0e-9194-571116e1b202/desktop/1920X600.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-532d3d01-1405-4e0e-9194-571116e1b202-desktop-o1RG1-8&impolicy=pqlow" alt="" />
           </div>
           <div id="button-prev" class="slider-button">
-               </div>
+               < </div>
                   <div id="button-next" class="slider-button"> > </div>
                   <div class="dots-container">
                       <div class="dot activeDot"></div>
@@ -505,163 +508,13 @@
 </section>
 <section class="color"></section>
 
-  <!-- <section class="product">
-      <h2 class="product-category">FASTRACK ESSENTIALS</h2>
-      <button class="pre-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-      <button class="nxt-btn"><img src="./fastrack essential pic/arrow.png" alt=""></button>
-      <div class="product-container">
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/bags.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">FASTRACK BAGS</h2>
-                  <p class="product-short-description">a beautiful purse to beautiful ladies...</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="/fastrack essential pic/belt.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">BELTS</h2>
-                  <p class="product-short-description">Mens Belts</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/digital.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">Digital TV</h2>
-                  <p class="product-short-description">starts on 16" to 52"</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/earphone.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">EARPHONES</h2>
-                  <p class="product-short-description">wired and wireless </p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/girls.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">Watches</h2>
-                  <p class="product-short-description">girls Watches collections</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/guys.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">Watches</h2>
-                  <p class="product-short-description">men Watches collections</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/mask.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">Masks</h2>
-                  <p class="product-short-description">mask for girls and boys</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/perfumes.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">perfumes</h2>
-                  <p class="product-short-description">perfumes for all</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/scooter.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">scooter</h2>
-                  <p class="product-short-description">scooter......</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/smartwatch.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">Smart Watches</h2>
-                  <p class="product-short-description">Smart watches for all....</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/tees.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">TEES watches</h2>
-                  <p class="product-short-description">tees watches for all section..</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-          <div class="product-card">
-              <div class="product-image">
-                  <span class="discount-tag">50% off</span>
-                  <img src="./fastrack essential pic/wallets.png" class="product-thumb" alt="">
-                  <button class="card-btn">add to wishlist</button>
-              </div>
-              <div class="product-info">
-                  <h2 class="product-brand">wallets</h2>
-                  <p class="product-short-description">mens wallets..</p>
-                  <span class="price">$20</span><span class="actual-price">$40</span>
-              </div>
-          </div>
-      </div>
-  </section> -->
+  
   <video autoplay muted loop id="myvideo">
     <source src="https://www.fastrack.in/wps/wcm/connect/fastrack/b1ae772f-6d85-4bdd-99e2-2044bc2d361e/FT_Curv_1920x600.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80OGS700Q8OKN8NF0004-b1ae772f-6d85-4bdd-99e2-2044bc2d361e-o4yHpeu" type="video/mp4">
 </video>
 
     <!-- Treding section starts here -->
-    <section class="trending_product flex">
+    <section class="trending_product trend flex">
           <div class="trending_watch_heading">
               <h2>TRENDING PRODUCTS</h2>
           </div>
@@ -731,12 +584,12 @@
           <a href="..//fastrackmain/product.html">Know more</a>
         </div>
         <div class="content-img">
-          <a href="../fastrackmain/product.html"><img src="./img/pic.jpg" alt=""></a>
+          <a href="../fastrackmain/product.html"><img src="./img/pic.jpg" id="digital_img1" alt=""></a>
         </div>
       </div>
       <div class="bottom flex">
         <div class="content-img2">
-          <a href="../fastrackmain/product.html"> <img src="./img/pic2.jpg" alt=""></a>
+          <a href="../fastrackmain/product.html"> <img src="./img/pic2.jpg" id="digital_img2" alt=""></a>
         </div>
         <div class="content-left2">
           YOU DO YOU AND COME AS YOU ARE! DIVE INTO THE WORLD OF LIMITLESS STYLE AND EXPRESSION WITH FASTRACK.
@@ -745,7 +598,7 @@
         </div>
       </div>
     </section>
-    <section class="trending_product flex">
+    <section class="trending_product trends flex">
       <div class="trending_watch_heading">
         <h2>TOP SELLERS</h2>
       </div>
@@ -852,7 +705,7 @@
     </section>
 
 
-    <section class="featured_collections">
+    <section class="featured_collections featured">
       <div class="trending_watch_heading">
         <h2>FEATURED COLLECTIONS</h2>
       </div>
@@ -875,7 +728,7 @@
         </div>
       </div>
     </section>
-    <section class="color"></section>
+    <section class="color featured_color"></section>
 
     <section class="followus">
       <div class="followusimg">
@@ -894,7 +747,18 @@
 
       </div>
     </section>
-  </main>
+  
+
+  <!----------------------------------- Cart Functinality Starts Here ------------------------------->
+
+  <section class="main">
+    <div class="watch-main-div"></div>
+</section>
+</main>
+<!----------------------------------- Cart Functinality Ends Here ------------------------------->
+
+
+
     <footer id="footer">
       <!-- section1 -->
       <section class="section1">
@@ -1331,16 +1195,6 @@
 </div>
 
   <!-------------------------------- Section on click "Request OTP" Ends Here ----------------------------->
-
-  <!----------------------------------- Cart Functinality Starts Here ------------------------------->
-  <!-- <button class="cart" onclick="cart_button()">
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart<span class="cart-number"></span>
-</button>
-</header>
-<main class="main">
-<div class="watch-main-div"></div>
-</main> -->
-  <!----------------------------------- Cart Functinality Ends Here ------------------------------->
 
 
     <script src="./app.js"></script>
