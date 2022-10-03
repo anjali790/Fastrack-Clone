@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container .upperDiv{
+    display: flex;
+}
+
+.container .upperDiv .left-box .image{
+    width: 600px;
+    margin: 30px 50px;
+}
+
+.container .upperDiv .right-box{
+    margin: 30px 20px;
+    width: 750px;
+}
+
+.container .upperDiv .right-box .visit-store .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form #input, #email{
+    width: 96%;
+    height: 35px;
+    margin: 15px 0;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.right-box .form .store{
+    margin-left: 20px;
+}
+
+.right-box .form .city, .store{
+    width: 360px;
+    height: 40px;
+    margin: 15px 0;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.right-box .form .date, .time{
+    width: 337px;
+    height: 35px;
+    margin: 15px 0;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.right-box .form .date{
+    margin-right: 20px;
+}
+
+.right-box .form .submitBtn{
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 45px;
+    width: 748px;
+    margin: 20px 0;
+}
+
+.container .lowerDiv{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container .lowerDiv h2{
+    margin-bottom: 10px;
+}
