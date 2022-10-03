@@ -4,7 +4,7 @@ var data = [];
 (async () => {
   let response = await fetch(`https://avish-test-api.herokuapp.com/watches`);
   let data = await response.json();
-  console.log(data);
+  // console.log(data);
 
   data.map((oneData) => {
     let main = document.querySelector(".watch-main-div");
