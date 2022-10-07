@@ -25,6 +25,7 @@ submitBtn.addEventListener('click', () => {
         localStorage.setItem('data', JSON.stringify(data));
         alert('Appointment Booked');
     }
+    console.log('hi')
 
 });
 
